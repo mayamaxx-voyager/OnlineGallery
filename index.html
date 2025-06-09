@@ -152,12 +152,37 @@
   .controls input   { font-size: 15px; }
 }
 
+/* ===== footer (always visible) ===== */
+.site-footer{
+  position: fixed;
+  bottom: 0; left: 0; width: 100%;
+  /* ① 旧ブラウザ用フォールバック（不透明） */
+  background:#333;
+  /* ② モダンブラウザ向けに半透明を上書き */
+  background:rgba(51,51,51,0.6);   /* 0.0 = 完全透明, 1.0 = 不透明 */
+  /*  #333333cc  でも同じ効果（cc ≒ 80%） */
+  color:#fff;
+  text-align:center;
+  padding:6px 0;
+  font-size:12px;
+  z-index:1000;
+}
+
+/* フッターの高さぶん余白を確保（本文が隠れないように） */
+body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
+
+
   </style>
 </head>
 <body>
-  <header>
+<header>
+  <picture>
+    <!-- ① 幅 600 px 未満（スマホ想定）では headersp.jpg -->
+    <source media="(max-width: 599px)" srcset="headersp.jpg">
+    <!-- ② それ以外（タブレット・PC など）は従来どおり header.jpg -->
     <img src="header.jpg" alt="Header image" class="header-image">
-  </header>
+  </picture>
+</header>
 
 <main class="page-wrap">
   <h1 id="pageTitle">MAYAMAXX Online Gallery</h1>
@@ -296,7 +321,13 @@
       const subj = localize(item['dc:subject']);
       const typ  = localize(item['dc:type']);
       const year = localize(item['dc:date']);
-      if (subj) subjSet.add(subj);   // 空文字 ("") は falsy なので追加されない
+      if (subj) {
+        subj.split(',').forEach(s => {
+         const t = s.trim();
+         if (t) subjSet.add(t);   // 「Landscape, Animals」→「Landscape」「Animals」
+        });
+      }
+
       if (typ)  typeSet.add(typ);
       if (year) yearSet.add(year);
       });
@@ -337,7 +368,10 @@
     const creator = localize(item['dc:creator']);
     const desc    = localize(item['dc:description']);
 
-    if (fltSubject && subj !== fltSubject) return false;
+     if (fltSubject) {
+       const subjList = subj.split(',').map(s => s.trim());
+       if (!subjList.includes(fltSubject)) return false;
+     }
     if (fltType    && typ  !== fltType)    return false;
     if (fltYear    && year !== fltYear)    return false;
     if (keyword && !(title + creator + desc).toLowerCase().includes(keyword)) return false;
@@ -427,5 +461,8 @@
       });
   </script>
  </main>
+ <footer class="site-footer">
+   Copyright&nbsp;©&nbsp;MAYA&nbsp;MAXX,&nbsp;2025&nbsp;All&nbsp;Rights&nbsp;Reserved.
+ </footer>
 </body>
 </html>
