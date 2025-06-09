@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- 最小構成（旧ブラウザ用） -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- 推奨構成（モダン + 旧ブラウザ両対応） -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- iOS ホーム画面 -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAYAMAXX Online Gallery</title>
+  <style>
+    /* --- header image --- */
+      header {
+      width: 100%;
+     }
+
+     header .header-image {
+       width: 100%;   /* 横幅いっぱいに広げる */
+       height: auto;  /* 縦横比を保つ */
+       display: block;/* 余白をなくす */
+     }
+    /* =============  Basic layout & look  ============= */
+    .page-wrap { padding: 20px; }
+    body {
+      font-family: "Arial", sans-serif;
+      background: linear-gradient(45deg, #f7f7f7, #ffffff);
+      color: #333;
+      padding: 0px;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 18px;
+    }
+
+    /* -------- control panel -------- */
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .controls label { display: flex; align-items: center; gap: 4px; }
+    .controls select,
+    .controls input[type="text"] {
+      padding: 6px;
+      font-size: 14px;
+    }
+
+    /* -------- gallery grid -------- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .artwork {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      text-align: left;
+    }
+    .artwork:hover { transform: scale(1.02); }
+    .artwork img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .artwork-content { padding: 10px 15px; }
+    .artwork-content h2 { font-size: 16px; margin: 5px 0; }
+    .artwork-content p { margin: 4px 0; font-size: 13px; color: #444; }
+
+    /* -------- simple modal -------- */
+    #modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      background: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    #modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 5px solid #fff;
+      border-radius: 10px;
+      object-fit: contain;
+      display: block;
+    }
+    #modal-close {
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+    }
+   #pageTitle { display: none; }
+   /* 作者行は共通なので表示しない */
+   .creator-line { display: none; }
+
+/* ========== ① スマホ向け（幅 600px 未満） ========== */
+@media (max-width: 599px) {
+
+  /* 余白・フォントをやや縮小 */
+  .page-wrap        { padding: 10px; }
+  body              { font-size: 14px; }
+
+  /* コントロール類を縦一列に並べる */
+  .controls         { flex-direction: column; align-items: stretch; gap: 8px; }
+  .controls label   { justify-content: space-between; }
+
+  /* ギャラリーは小さめカードを細かく並べる */
+  .gallery          { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .artwork img      { height: 140px; }   /* カードの縦幅も圧縮 */
+
+  /* モーダル画像は画面いっぱいに近づける */
+  #modal img        { max-width: 96%; max-height: 80%; }
+
+  /* ▼ 追加：タイプのプルダウンを隠す */
+  #typeLabel { display: none; }
+
+}
+
+/* ========== ② タブレット〜標準 PC（幅 600–1199px） ========== */
+/* 既定値（今の CSS）がちょうど良いので特に調整不要           */
+
+/* ========== ③ 大きめ PC（幅 1200px 以上） ========== */
+@media (min-width: 1200px) {
+
+  /* 余白とカードの見栄えを少しリッチに */
+  .page-wrap        { padding: 40px; }
+  .gallery          { gap: 26px; }
+  .artwork img      { height: 250px; }
+
+  /* 見出しや入力群をわずかに拡大 */
+  h1                { font-size: 28px; }
+  .controls         { font-size: 15px; }
+  .controls select,
+  .controls input   { font-size: 15px; }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="header.jpg" alt="Header image" class="header-image">
+  </header>
+
+<main class="page-wrap">
+  <h1 id="pageTitle">MAYAMAXX Online Gallery</h1>
+
+  <!-- ▼ filter / search UI -->
+  <div class="controls">
+    <label id="langLabel">
+      言語:
+      <select id="lang">
+        <option value="ja">日本語</option>
+        <option value="en">English</option>
+      </select>
+    </label>
+
+    <label id="subjectLabel">
+      カテゴリ:
+      <select id="subjectFilter"><option value="">すべて</option></select>
+    </label>
+    <label id="typeLabel">
+      タイプ:
+      <select id="typeFilter"><option value="">すべて</option></select>
+    </label>
+    <label id="yearLabel">
+      年代:
+      <select id="yearFilter"><option value="">すべて</option></select>
+    </label>
+    <label id="searchLabel">
+      検索:
+      <input type="text" id="searchInput" placeholder="キーワード" />
+    </label>
+    <label id="limitLabel">
+      表示件数:
+      <select id="limit">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="9999" selected>All</option>
+      </select>
+    </label>
+  </div>
+  <!-- ▲ filter / search UI -->
+
+  <div class="gallery" id="gallery">読み込み中...</div>
+
+  <!-- simple image modal -->
+  <div id="modal">
+    <span id="modal-close">&times;</span>
+    <img id="modal-image" src="" alt="detail" />
+  </div>
+
+  <script>
+    // ===================== translation table =====================
+    const tr = {
+      ja: {
+        pageTitle: 'MAYAMAXX Online Gallery',
+        language: '言語',
+        category: 'カテゴリ',
+        type: 'タイプ',
+        year: '年代',
+        search: '検索',
+        keywordPh: 'キーワード',
+        limit: '表示件数',
+        all: 'すべて',
+        creator: '作者',
+        date: '年代',
+        technique: '技法',
+        description: '説明'
+      },
+      en: {
+        pageTitle: 'MAYAMAXX Online Gallery',
+        language: 'Language',
+        category: 'Category',
+        type: 'Type',
+        year: 'Year',
+        search: 'Search',
+        keywordPh: 'Keyword',
+        limit: 'Items',
+        all: 'All',
+        creator: 'Artist',
+        date: 'Year',
+        technique: 'Technique',
+        description: 'Description'
+      }
+    };
+
+    let artworks = [];
+    let currentLang = 'ja';
+
+    // ---------------- helper: robust localized field ----------------
+    function localize(raw) {
+      const isNullLike = v =>
+      v === null || v === undefined ||
+      (typeof v === 'string' && v.trim().toLowerCase() === 'null');
+      if (isNullLike(raw)) return '';
+      try {
+        // raw may be JSON string, object, or plain string
+        if (typeof raw === 'string' && raw.trim().startsWith('{')) {
+          raw = JSON.parse(raw);
+        }
+        if (typeof raw === 'object') {
+       const chosen = raw[currentLang] ?? raw[Object.keys(raw)[0]];
+       return isNullLike(chosen) ? '' : String(chosen);        }
+        return String(raw);
+      } catch (_) {
+        return isNullLike(raw) ? '' : String(raw);
+      }
+    }
+
+    // ---------------- translate static UI ----------------
+    function translateUI() {
+      const t = tr[currentLang];
+      document.title = t.pageTitle;
+      document.getElementById('pageTitle').textContent = t.pageTitle;
+      // labels
+      document.getElementById('langLabel').childNodes[0].nodeValue = t.language + ': ';
+      document.getElementById('subjectLabel').childNodes[0].nodeValue = t.category + ': ';
+      document.getElementById('typeLabel').childNodes[0].nodeValue = t.type + ': ';
+      document.getElementById('yearLabel').childNodes[0].nodeValue = t.year + ': ';
+      document.getElementById('searchLabel').childNodes[0].nodeValue = t.search + ': ';
+      document.getElementById('limitLabel').childNodes[0].nodeValue = t.limit + ': ';
+      document.getElementById('searchInput').placeholder = t.keywordPh;
+      // default option text ("all")
+      ['subjectFilter','typeFilter','yearFilter'].forEach(id=>{
+        const sel = document.getElementById(id);
+        if (sel && sel.options.length) sel.options[0].textContent = t.all;
+      });
+    }
+
+    // ---------------- dynamic filters ----------------
+    function populateFilters() {
+      const subjSet = new Set();
+      const typeSet = new Set();
+      const yearSet = new Set();
+      artworks.forEach(item => {
+      const subj = localize(item['dc:subject']);
+      const typ  = localize(item['dc:type']);
+      const year = localize(item['dc:date']);
+      if (subj) subjSet.add(subj);   // 空文字 ("") は falsy なので追加されない
+      if (typ)  typeSet.add(typ);
+      if (year) yearSet.add(year);
+      });
+      const fill = (id,set) => {
+        const sel = document.getElementById(id);
+        // remove old except first ("all")
+        while (sel.options.length > 1) sel.remove(1);
+        Array.from(set).sort().forEach(v=>{
+          const o=document.createElement('option');
+          o.value=v; o.textContent=v; sel.appendChild(o);
+        });
+      };
+      fill('subjectFilter',subjSet);
+      fill('typeFilter',typeSet);
+      fill('yearFilter',yearSet);
+    }
+
+    // ---------------- render gallery ----------------
+    function renderGallery() {
+        // ----- 0. 画面をクリア -----
+  const gallery = document.getElementById('gallery');
+  gallery.innerHTML = '';
+
+  // ----- 1. フィルタ条件・UI 値を取得 -----
+  const fltSubject = document.getElementById('subjectFilter').value;
+  const fltType    = document.getElementById('typeFilter').value;
+  const fltYear    = document.getElementById('yearFilter').value;
+  const keyword    = document.getElementById('searchInput').value.trim().toLowerCase();
+  const limit      = Number(document.getElementById('limit').value);
+  const tLabels    = tr[currentLang];
+
+  // ----- 2. 作品を絞り込み -----
+  const filtered = artworks.filter(item => {
+    const title   = localize(item['dc:title']);
+    const subj    = localize(item['dc:subject']);
+    const typ     = localize(item['dc:type']);
+    const year    = localize(item['dc:date']);
+    const creator = localize(item['dc:creator']);
+    const desc    = localize(item['dc:description']);
+
+    if (fltSubject && subj !== fltSubject) return false;
+    if (fltType    && typ  !== fltType)    return false;
+    if (fltYear    && year !== fltYear)    return false;
+    if (keyword && !(title + creator + desc).toLowerCase().includes(keyword)) return false;
+    return true;
+  });
+
+  if (!filtered.length) {
+    gallery.textContent = currentLang === 'ja'
+      ? '該当する作品がありません。'
+      : 'No artworks found.';
+    return;
+  }
+
+  // ----- 3. 年代降順に並べ替え -----
+  const sorted = filtered.sort((a, b) => {
+    const yB = parseInt(localize(b['dc:date'])) || 0;
+    const yA = parseInt(localize(a['dc:date'])) || 0;
+    return yB - yA;
+  });
+
+  // ----- 4. 描画 -----
+  sorted.slice(0, limit).forEach(item => {
+        const title = localize(item['dc:title']);
+        const subj  = localize(item['dc:subject']);
+        const typ   = localize(item['dc:type']);
+        const year = localize(item['dc:date']);
+        const creator = localize(item['dc:creator']);
+        const desc = localize(item['dc:description']);
+        const thumb = item['thumbnail_url'] || item['thumbnail_filename'];
+        const detail= item['detail_url']    || item['detail_filename'] || thumb;
+
+        const card = document.createElement('div');
+        card.className = 'artwork';
+        card.innerHTML = `
+          ${thumb ? `<img src="${thumb}" alt="${title}" loading="lazy" />` : ''}
+          <div class="artwork-content">
+            <h2>${title}</h2>
+            ${creator ? `<p class="creator-line"><strong>${tLabels.creator}:</strong> ${creator}</p>` : ''}
+            ${year    ? `<p><strong>${tLabels.date}:</strong> ${year}</p>` : ''}
+            ${subj    ? `<p><strong>${tLabels.category}:</strong> ${subj}</p>` : ''}
+            ${typ     ? `<p><strong>${tLabels.technique}:</strong> ${typ}</p>` : ''}
+            ${desc    ? `<p>${desc}</p>` : ''}
+          </div>`;
+
+        const imgTag = card.querySelector('img');
+        if(imgTag){
+          imgTag.addEventListener('click',()=>{
+            document.getElementById('modal-image').src = detail;
+            document.getElementById('modal').style.display = 'flex';
+          });
+        }
+        gallery.appendChild(card);
+      });
+    }
+
+    // ---------------- modal close ----------------
+    document.getElementById('modal-close').addEventListener('click',()=>{
+      document.getElementById('modal').style.display='none';
+    });
+    document.getElementById('modal').addEventListener('click',e=>{
+      if(e.target===e.currentTarget) e.currentTarget.style.display='none';
+    });
+
+    // ---------------- event bindings ----------------
+    document.getElementById('lang').addEventListener('change',e=>{
+      currentLang = e.target.value;
+      translateUI();
+      populateFilters();
+      renderGallery();
+    });
+    ['subjectFilter','typeFilter','yearFilter','limit'].forEach(id=>{
+      document.getElementById(id).addEventListener('change',renderGallery);
+    });
+    document.getElementById('searchInput').addEventListener('input',renderGallery);
+
+    // ---------------- load initial data ----------------
+    fetch('metadata-mayamaxx.json')
+      .then(res=>res.json())
+      .then(json=>{
+        artworks = json.rows || json;
+        translateUI();
+        populateFilters();
+        renderGallery();
+      })
+      .catch(err=>{
+        document.getElementById('gallery').textContent = 'JSON 読み込み失敗: '+err;
+      });
+  </script>
+ </main>
+</body>
+</html>
