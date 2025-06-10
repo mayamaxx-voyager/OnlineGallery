@@ -6733,7 +6733,7 @@
       "dc:date" : "1995",
       "dc:description" : "{\"ja\":\"90.0×60.0×2.5cm \",\"en\":\"90.0×60.0×2.5cm \"}",
       "dc:subject" : "{\"ja\":\"サル,動物\",\"en\":\"Monkey,Animal\"}",
-      "dc:type" : "{\"ja\":\"ロールスクリーンにアクリル絵具\",\"en\":\"Acrylic on roller blind\"}",
+      "dc:type" : "{\"ja\":null,\"en\":null}",
       "dc:format" : "JPG",
       "dc:language" : "ja",
       "dc:rights" : "© MAYAMAXX. All rights reserved. For more information, visit https://mayamaxx.jp/",
