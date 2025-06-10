@@ -1256,7 +1256,7 @@
     },
     {
       "dc:identifier" : "AWaterJag0001",
-      "dc:title" : "{\"ja\":\"A water jag\",\"en\":\"A water jag\"}",
+      "dc:title" : "{\"ja\":\"A water jag(front)\",\"en\":\"A water jag(front)\"}",
       "dc:creator" : "MAYAMAXX",
       "dc:date" : "1994",
       "dc:description" : "{\"ja\":\"90.9×60.6cm\",\"en\":\"90.9×60.6cm\"}",
@@ -1598,11 +1598,11 @@
     },
     {
       "dc:identifier" : "BlueHorse0001",
-      "dc:title" : "{\"ja\":\"BlueHorse\",\"en\":\"BlueHorse\"}",
+      "dc:title" : "{\"ja\":\"Blue Horse\",\"en\":\"Blue Horse\"}",
       "dc:creator" : "MAYAMAXX",
       "dc:date" : "1994",
       "dc:description" : "{\"ja\":\"54.5×42.4cm\",\"en\":\"54.5×42.4cm\"}",
-      "dc:subject" : "{\"ja\":\"ウマ,動物\",\"en\":\"Horse,Animal\"}",
+      "dc:subject" : "{\"ja\":\"馬,動物\",\"en\":\"Horse,Animal\"}",
       "dc:type" : "{\"ja\":\"紙にアクリル絵具、油絵具\",\"en\":\"Acrylic, oil on paper\"}",
       "dc:format" : "JPG",
       "dc:language" : "ja",
