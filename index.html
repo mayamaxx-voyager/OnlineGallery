@@ -159,7 +159,7 @@
   /* ① 旧ブラウザ用フォールバック（不透明） */
   background:#333;
   /* ② モダンブラウザ向けに半透明を上書き */
-  background:rgba(51,51,51,0.6);   /* 0.0 = 完全透明, 1.0 = 不透明 */
+  background:rgba(51,51,51,0.65);   /* 0.0 = 完全透明, 1.0 = 不透明 */
   /*  #333333cc  でも同じ効果（cc ≒ 80%） */
   color:#fff;
   text-align:center;
@@ -167,6 +167,13 @@
   font-size:12px;
   z-index:1000;
 }
+
+/* ▼ 追加：フッタ内の段落を詰める ----------------------- */
+.site-footer p{
+  margin: 0;            /* デフォルト上下 1em → 0 に */
+  line-height: 1.2;    /* 行送りを狭く（1.0〜1.2 で調整） */
+}
+/* ------------------------------------------------------ */
 
 /* フッターの高さぶん余白を確保（本文が隠れないように） */
 body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
@@ -190,9 +197,9 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
   <!-- ▼ filter / search UI -->
   <div class="controls">
     <label id="langLabel">
-      言語:
+      Language:
       <select id="lang">
-        <option value="ja">日本語</option>
+        <option value="ja">Japanese</option>
         <option value="en">English</option>
       </select>
     </label>
@@ -239,7 +246,7 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
     const tr = {
       ja: {
         pageTitle: 'MAYAMAXX Online Gallery',
-        language: '言語',
+        language: 'Language',
         category: 'カテゴリ',
         type: 'タイプ',
         year: '年代',
@@ -310,6 +317,10 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
         const sel = document.getElementById(id);
         if (sel && sel.options.length) sel.options[0].textContent = t.all;
       });
+  // ---------- フッターの日英切替 ----------
+  document.querySelectorAll('#siteFooter [data-lang]').forEach(el=>{
+    el.style.display = (el.getAttribute('data-lang') === currentLang) ? 'block' : 'none';
+  });
     }
 
     // ---------------- dynamic filters ----------------
@@ -461,8 +472,27 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
       });
   </script>
  </main>
- <footer class="site-footer">
-   Copyright&nbsp;©&nbsp;MAYA&nbsp;MAXX,&nbsp;2025&nbsp;All&nbsp;Rights&nbsp;Reserved.
- </footer>
+<footer id="siteFooter" class="site-footer">
+  <!-- 日本語用 -->
+  <div data-lang="ja">
+    <p>MAYA MAXX をみんなで守ろう！ みんなでつくるアーカイブプロジェクト</p>
+    <p>作品情報をお寄せください
+       <a href="mailto:michikururu@gmail.com">michikururu@gmail.com</a>
+    </p>
+    <p>MAYA MAXX Archive Project | Michiko Kurushima / Keiichi Murakami / Hiroyuki Abe</p>
+    <p>Copyright© MAYA MAXX , 2025 All Rights Reserved.</p>
+  </div>
+
+  <!-- 英語用 -->
+  <div data-lang="en">
+    <p>Let’s all help preserve MAYA MAXX!<br>
+       A collaborative archive project by everyone.</p>
+    <p>Please send us any information about the artworks:
+       <a href="mailto:michikururu@gmail.com">michikururu@gmail.com</a>
+    </p>
+    <p>MAYA MAXX Archive Project | Michiko Kurushima / Keiichi Murakami / Hiroyuki Abe</p>
+    <p>Copyright© MAYA MAXX , 2025 All Rights Reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
