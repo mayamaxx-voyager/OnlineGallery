@@ -24,119 +24,7 @@
        width: 100%;   /* 横幅いっぱいに広げる */
        height: auto;  /* 縦横比を保つ */
        display: block;/* 余白をなくす */
-  	margin-bottom: 16px;  /* お好みの値に調整してください */
      }
-
-:root {
-  --accent: #2e86de;           /* アクセントカラー（お好みで） */
-  --panel-bg: rgba(60, 60, 60, 0.4);
-  --btn-bg: rgba(255, 255, 255, 0.5);
-  --btn-color: #333;
-  --btn-hover-bg: var(--accent);
-  --btn-hover-color: #fff;
-}
-
-
-/* —— トグルボタン —— */
-.toggle-controls {
-  position: fixed;
-  top: 4px;
-  left: 4px;
-  z-index: 1000;
-  padding: 1px 6px;
-  font-size: 32px;
-  font-weight: 600;
-  color: var(--btn-color);
-  background: var(--btn-bg);
-  border: none;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition:
-    background 0.3s ease,
-    color 0.3s ease,
-    transform 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 6px;18:40 2025/06/12
-}
-/* アイコンはCSS擬似要素で */
-.toggle-controls::before {
-18:27 2025/06/12
-}
-.controls-panel.open + .toggle-controls::before {
-
-}
-/* ホバー効果 */
-.toggle-controls:hover {
-  background: var(--btn-hover-bg);
-  color: var(--btn-hover-color);
-  transform: translateY(-2px);
-}
-
-/* —— サイドバー本体 —— */
-.controls-panel {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 230px;
-  height: 100%;
-  padding: 80px 24px 24px; /* 上を 80px に調整 */
-  background: var(--panel-bg);
-  backdrop-filter: blur(8px);
-  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.2);
-  transform: translateX(-100%);
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-  z-index: 900;
-  overflow-y: auto;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
-}
-
-/* —— 開いた状態 —— */
-.controls-panel.open {
-  transform: translateX(0);
-}
-
-/* —— サイドバー内の各要素 —— */
-
-.controls label {
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  font-weight: 500;
-  color: #eee;
-}
-.controls select,
-.controls input[type="text"] {
-  margin-top: 6px;
-  padding: 8px 10px;
-  font-size: 18px;
-  border: none;
-  border-radius: 6px;
-  background: #909090;
-  color: #fafafa;
-  transition: background 0.2s ease;
-}
-.controls select:focus,
-.controls input[type="text"]:focus {
-  background: #555;
-  outline: 2px solid var(--accent);
-}
-
-/* —— スクロールバーもスタイリッシュに —— */
-.controls-panel::-webkit-scrollbar {
-  width: 8px;
-}
-.controls-panel::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-}
-.controls-panel::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-
     /* =============  Basic layout & look  ============= */
     .page-wrap { padding: 20px; }
     body {
@@ -153,22 +41,19 @@
     }
 
     /* -------- control panel -------- */
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;  /* ← 左寄せに変更 */
-  align-items: flex-start;       /* 必要に応じてアイテムの縦位置も調整 */
-  gap: 15px;
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-    .controls label {
-	text-align: left;
-	}
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .controls label { display: flex; align-items: center; gap: 4px; }
     .controls select,
     .controls input[type="text"] {
       padding: 6px;
-      font-size: 18px;
+      font-size: 14px;
     }
 
     /* -------- gallery grid -------- */
@@ -197,20 +82,15 @@
     .artwork-content p { margin: 4px 0; font-size: 13px; color: #444; }
 
     /* -------- simple modal -------- */
-#modal {
-  position: fixed;
-  /* ヘッダー画像の高さ + margin-bottom の合計値を top に */
-  /* たとえばヘッダー画像が 150px 高、margin-bottom が 20px なら top:170px */
-  top: 0px;   
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  background: rgba(0, 0, 0, 0.8);
-  align-items: center;
-  justify-content: center;
-  z-index: 800;
-}
+    #modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      background: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
     #modal img {
       max-width: 90%;
       max-height: 90%;
@@ -239,7 +119,7 @@
   body              { font-size: 14px; }
 
   /* コントロール類を縦一列に並べる */
-  .controls         { flex-direction: column; align-items: stretch; gap: 15px; }
+  .controls         { flex-direction: column; align-items: stretch; gap: 8px; }
   .controls label   { justify-content: space-between; }
 
   /* ギャラリーは小さめカードを細かく並べる */
@@ -298,10 +178,6 @@
 /* フッターの高さぶん余白を確保（本文が隠れないように） */
 body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
 
-/* ——— サイドバー内のタイプフィルターを非表示 ——— */
-#typeLabel {
-  display: none !important;
-}
 
   </style>
 </head>
@@ -315,11 +191,9 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
   </picture>
 </header>
 
-  <!-- 右上に常時表示させる「フィルター開閉ボタン」 -->
-  <button id="toggle-controls" class="toggle-controls">Filter ▸</button>
- 
- <!-- スライドインするサイドバー -->
-  <aside id="controls-panel" class="controls-panel">
+<main class="page-wrap">
+  <h1 id="pageTitle">MAYAMAXX Online Gallery</h1>
+
   <!-- ▼ filter / search UI -->
   <div class="controls">
     <label id="langLabel">
@@ -358,13 +232,8 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
     </label>
   </div>
   <!-- ▲ filter / search UI -->
-  </aside>
-
 
   <div class="gallery" id="gallery">読み込み中...</div>
-
-<main class="page-wrap">
-  <h1 id="pageTitle">MAYAMAXX Online Gallery</h1>
 
   <!-- simple image modal -->
   <div id="modal">
@@ -373,35 +242,6 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
   </div>
 
   <script>
-
- document.addEventListener('DOMContentLoaded', () => {
-  const panel = document.getElementById('controls-panel');
-  const btn   = document.getElementById('toggle-controls');
-
-  // 初期表示
-  btn.textContent = '▸ '; 
-
-  btn.addEventListener('click', () => {
-    panel.classList.toggle('open');
-    if (panel.classList.contains('open')) {
-      btn.textContent = '◂ ';  // 開いたら左向き矢印
-    } else {
-      btn.textContent = '▸ ';  // 閉じたら右向き矢印
-    }
-  });
-
-  // サイドバー外クリックで閉じる（任意）
-  document.addEventListener('click', e => {
-    if (panel.classList.contains('open')
-        && !panel.contains(e.target)
-        && e.target !== btn) {
-      panel.classList.remove('open');
-      btn.textContent = '';
-    }
-  });
-});
-
-
     // ===================== translation table =====================
     const tr = {
       ja: {
