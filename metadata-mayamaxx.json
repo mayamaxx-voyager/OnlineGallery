@@ -2,7 +2,7 @@
   "rows" : [
     {
       "dc:identifier" : "2ndMinorGame0001",
-      "dc:title" : "2nd minor GAME",
+      "dc:title" : "{\"ja\":\"2nd minor GAME\",\"en\":\"2nd minor GAME\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2000",
       "dc:description" : "{\"ja\":\"186.5×160cm\",\"en\":\"186.5×160cm\"}",
@@ -40,7 +40,7 @@
     },
     {
       "dc:identifier" : "ADayOfMitchell0001",
-      "dc:title" : "A day of Mitchell",
+      "dc:title" : "{\"ja\":\"A day of Mitchell\",\"en\":\"A day of Mitchell\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1996",
       "dc:description" : "{\"ja\":\"20.3×25.5cm×2sheets\",\"en\":\"20.3×25.5cm×2sheets\"}",
@@ -78,7 +78,7 @@
     },
     {
       "dc:identifier" : "AmedeoCervantesTheKing0001",
-      "dc:title" : "AMEDEO CERVANTES THE KING",
+      "dc:title" : "{\"ja\":\"AMEDEO CERVANTES THE KING\",\"en\":\"AMEDEO CERVANTES THE KING\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2000",
       "dc:description" : "{\"ja\":\"186.5×160.5cm\",\"en\":\"186.5×160.5cm\"}",
@@ -116,7 +116,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0001",
-      "dc:title" : "Autumn Equinox 1",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 1\",\"en\":\"Autumn Equinox 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -154,7 +154,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0002",
-      "dc:title" : "Autumn Equinox 2",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 2\",\"en\":\"Autumn Equinox 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -192,7 +192,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0003",
-      "dc:title" : "Autumn Equinox 3",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 3\",\"en\":\"Autumn Equinox 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -230,7 +230,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0004",
-      "dc:title" : "Autumn Equinox 4",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 4\",\"en\":\"Autumn Equinox 4\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -268,7 +268,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0005",
-      "dc:title" : "Autumn Equinox 5",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 5\",\"en\":\"Autumn Equinox 5\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -306,7 +306,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0006",
-      "dc:title" : "Autumn Equinox 6",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 6\",\"en\":\"Autumn Equinox 6\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -344,7 +344,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0007",
-      "dc:title" : "Autumn Equinox 7",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 7\",\"en\":\"Autumn Equinox 7\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -382,7 +382,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0008",
-      "dc:title" : "Autumn Equinox 8",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 8\",\"en\":\"Autumn Equinox 8\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -420,7 +420,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0009",
-      "dc:title" : "Autumn Equinox 9",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 9\",\"en\":\"Autumn Equinox 9\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -458,7 +458,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0010",
-      "dc:title" : "Autumn Equinox 10",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 10\",\"en\":\"Autumn Equinox 10\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -496,7 +496,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0011",
-      "dc:title" : "Autumn Equinox 11",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 11\",\"en\":\"Autumn Equinox 11\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -534,7 +534,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0012",
-      "dc:title" : "Autumn Equinox 12",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 12\",\"en\":\"Autumn Equinox 12\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -572,7 +572,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0013",
-      "dc:title" : "Autumn Equinox 13",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 13\",\"en\":\"Autumn Equinox 13\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -610,7 +610,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0014",
-      "dc:title" : "Autumn Equinox 14",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 14\",\"en\":\"Autumn Equinox 14\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -648,7 +648,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0015",
-      "dc:title" : "Autumn Equinox 15",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 15\",\"en\":\"Autumn Equinox 15\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -686,7 +686,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0016",
-      "dc:title" : "Autumn Equinox 16",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 16\",\"en\":\"Autumn Equinox 16\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -724,7 +724,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0017",
-      "dc:title" : "Autumn Equinox 17",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 17\",\"en\":\"Autumn Equinox 17\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -762,7 +762,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0018",
-      "dc:title" : "Autumn Equinox 18",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 18\",\"en\":\"Autumn Equinox 18\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -800,7 +800,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0019",
-      "dc:title" : "Autumn Equinox 19",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 19\",\"en\":\"Autumn Equinox 19\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -838,7 +838,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0020",
-      "dc:title" : "Autumn Equinox 20",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 20\",\"en\":\"Autumn Equinox 20\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -876,7 +876,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0021",
-      "dc:title" : "Autumn Equinox 21",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 21\",\"en\":\"Autumn Equinox 21\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -914,7 +914,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0022",
-      "dc:title" : "Autumn Equinox 22",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 22\",\"en\":\"Autumn Equinox 22\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -952,7 +952,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0023",
-      "dc:title" : "Autumn Equinox 23",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 23\",\"en\":\"Autumn Equinox 23\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -990,7 +990,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0024",
-      "dc:title" : "Autumn Equinox 24",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 24\",\"en\":\"Autumn Equinox 24\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1028,7 +1028,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0025",
-      "dc:title" : "Autumn Equinox 25",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 25\",\"en\":\"Autumn Equinox 25\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1066,7 +1066,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0026",
-      "dc:title" : "Autumn Equinox 26",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 26\",\"en\":\"Autumn Equinox 26\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1104,7 +1104,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0027",
-      "dc:title" : "Autumn Equinox 27",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 27\",\"en\":\"Autumn Equinox 27\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1142,7 +1142,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0028",
-      "dc:title" : "Autumn Equinox 28",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 28\",\"en\":\"Autumn Equinox 28\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1180,7 +1180,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0029",
-      "dc:title" : "Autumn Equinox 29",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 29\",\"en\":\"Autumn Equinox 29\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1218,7 +1218,7 @@
     },
     {
       "dc:identifier" : "AutumnEquinox0030",
-      "dc:title" : "Autumn Equinox 30",
+      "dc:title" : "{\"ja\":\"Autumn Equinox 30\",\"en\":\"Autumn Equinox 30\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1256,7 +1256,7 @@
     },
     {
       "dc:identifier" : "AWaterJag0001",
-      "dc:title" : "A water jag(front)",
+      "dc:title" : "{\"ja\":\"A water jag(front)\",\"en\":\"A water jag(front)\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1994",
       "dc:description" : "{\"ja\":\"90.9×60.6cm\",\"en\":\"90.9×60.6cm\"}",
@@ -1294,7 +1294,7 @@
     },
     {
       "dc:identifier" : "AWorkingBee0001",
-      "dc:title" : "A WORKING BEE",
+      "dc:title" : "{\"ja\":\"A WORKING BEE\",\"en\":\"A WORKING BEE\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1995",
       "dc:description" : "{\"ja\":\"218.4×158.3cm\",\"en\":\"218.4×158.3cm\"}",
@@ -1332,7 +1332,7 @@
     },
     {
       "dc:identifier" : "BeKindAndHaveTheCourageEarth0001",
-      "dc:title" : "Be kind and have the courage, earth",
+      "dc:title" : "{\"ja\":\"Be kind and have the courage, earth\",\"en\":\"Be kind and have the courage, earth\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -1370,7 +1370,7 @@
     },
     {
       "dc:identifier" : "BeKindAndHaveTheCourageHeaven0001",
-      "dc:title" : "Be kind and have the courage, heaven",
+      "dc:title" : "{\"ja\":\"Be kind and have the courage, heaven\",\"en\":\"Be kind and have the courage, heaven\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -1408,7 +1408,7 @@
     },
     {
       "dc:identifier" : "BeKindAndHaveTheCourageFuture0001",
-      "dc:title" : "Be kind and have the courage, future",
+      "dc:title" : "{\"ja\":\"Be kind and have the courage, future\",\"en\":\"Be kind and have the courage, future\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -1446,7 +1446,7 @@
     },
     {
       "dc:identifier" : "BeKindAndHaveTheCouragePast0001",
-      "dc:title" : "Be kind and have the courage, present",
+      "dc:title" : "{\"ja\":\"Be kind and have the courage, present\",\"en\":\"Be kind and have the courage, present\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -1484,7 +1484,7 @@
     },
     {
       "dc:identifier" : "BeKindAndHaveTheCouragePresent0001",
-      "dc:title" : "Be kind and have the courage, past",
+      "dc:title" : "{\"ja\":\"Be kind and have the courage, past\",\"en\":\"Be kind and have the courage, past\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -1522,7 +1522,7 @@
     },
     {
       "dc:identifier" : "BlackOxFudo0001",
-      "dc:title" : "黒牛不動図",
+      "dc:title" : "{\"ja\":\"黒牛不動図\",\"en\":\"Black ox Fudo\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -1560,7 +1560,7 @@
     },
     {
       "dc:identifier" : "BlackOxOfLascaux0001",
-      "dc:title" : "黒牛ラスコー図",
+      "dc:title" : "{\"ja\":\"黒牛ラスコー図\",\"en\":\"Black ox of  Lascaux\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -1598,7 +1598,7 @@
     },
     {
       "dc:identifier" : "BlueHorse0001",
-      "dc:title" : "Blue Horse",
+      "dc:title" : "{\"ja\":\"Blue Horse\",\"en\":\"Blue Horse\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1994",
       "dc:description" : "{\"ja\":\"54.5×42.4cm\",\"en\":\"54.5×42.4cm\"}",
@@ -1636,7 +1636,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0002",
-      "dc:title" : "Blue Light in the Snow 2",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 2\",\"en\":\"Blue Light in the Snow 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1674,7 +1674,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0003",
-      "dc:title" : "Blue Light in the Snow 3",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 3\",\"en\":\"Blue Light in the Snow 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1712,7 +1712,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0004",
-      "dc:title" : "Blue Light in the Snow 4",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 4\",\"en\":\"Blue Light in the Snow 4\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1750,7 +1750,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0005",
-      "dc:title" : "Blue Light in the Snow 5",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 5\",\"en\":\"Blue Light in the Snow 5\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1788,7 +1788,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0006",
-      "dc:title" : "Blue Light in the Snow 6",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 6\",\"en\":\"Blue Light in the Snow 6\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1826,7 +1826,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0007",
-      "dc:title" : "Blue Light in the Snow 7",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 7\",\"en\":\"Blue Light in the Snow 7\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1864,7 +1864,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0009",
-      "dc:title" : "Blue Light in the Snow 9",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 9\",\"en\":\"Blue Light in the Snow 9\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1902,7 +1902,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0010",
-      "dc:title" : "Blue Light in the Snow 10",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 10\",\"en\":\"Blue Light in the Snow 10\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1940,7 +1940,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0011",
-      "dc:title" : "Blue Light in the Snow 11",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 11\",\"en\":\"Blue Light in the Snow 11\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -1978,7 +1978,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0012",
-      "dc:title" : "Blue Light in the Snow 12",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 12\",\"en\":\"Blue Light in the Snow 12\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -2016,7 +2016,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0013",
-      "dc:title" : "Blue Light in the Snow 13",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 13\",\"en\":\"Blue Light in the Snow 13\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -2054,7 +2054,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0014",
-      "dc:title" : "Blue Light in the Snow 14",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 14\",\"en\":\"Blue Light in the Snow 14\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -2092,7 +2092,7 @@
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0015",
-      "dc:title" : "Blue Light in the Snow 15",
+      "dc:title" : "{\"ja\":\"Blue Light in the Snow 15\",\"en\":\"Blue Light in the Snow 15\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020-2021",
       "dc:description" : "{\"ja\":\"30×30cm , Photo by Ikuya Sasaki\",\"en\":\"30×30cm , Photo by Ikuya Sasaki\"}",
@@ -2130,7 +2130,7 @@
     },
     {
       "dc:identifier" : "BlueOrangutan0001",
-      "dc:title" : "Blue Orangutan 1",
+      "dc:title" : "{\"ja\":\"Blue Orangutan 1\",\"en\":\"Blue Orangutan 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 3枚組\",\"en\":\"180×90cm a 3-piece painting series\"}",
@@ -2168,7 +2168,7 @@
     },
     {
       "dc:identifier" : "BlueOrangutan0002",
-      "dc:title" : "Blue Orangutan 2",
+      "dc:title" : "{\"ja\":\"Blue Orangutan 2\",\"en\":\"Blue Orangutan 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 3枚組\",\"en\":\"180×90cm a 3-piece painting series\"}",
@@ -2206,7 +2206,7 @@
     },
     {
       "dc:identifier" : "BlueOrangutan0003",
-      "dc:title" : "Blue Orangutan 3",
+      "dc:title" : "{\"ja\":\"Blue Orangutan 3\",\"en\":\"Blue Orangutan 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 3枚組\",\"en\":\"180×90cm a 3-piece painting series\"}",
@@ -2244,7 +2244,7 @@
     },
     {
       "dc:identifier" : "Bow0001",
-      "dc:title" : "Bow",
+      "dc:title" : "{\"ja\":\"Bow\",\"en\":\"Bow\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"200×150cm\",\"en\":\"200×150cm\"}",
@@ -2282,7 +2282,7 @@
     },
     {
       "dc:identifier" : "CalmBambiInTheForest0001",
-      "dc:title" : "Calm Bambi in the forest 1",
+      "dc:title" : "{\"ja\":\"Calm Bambi in the forest 1\",\"en\":\"Calm Bambi in the forest 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"72×100cm 4枚組 , Photo by Ikuya Sasaki\",\"en\":\"72×100cm a 4-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2320,7 +2320,7 @@
     },
     {
       "dc:identifier" : "CalmBambiInTheForest0002",
-      "dc:title" : "Calm Bambi in the forest 2",
+      "dc:title" : "{\"ja\":\"Calm Bambi in the forest 2\",\"en\":\"Calm Bambi in the forest 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"72×100cm 4枚組 , Photo by Ikuya Sasaki\",\"en\":\"72×100cm a 4-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2358,7 +2358,7 @@
     },
     {
       "dc:identifier" : "CalmBambiInTheForest0003",
-      "dc:title" : "Calm Bambi in the forest 3",
+      "dc:title" : "{\"ja\":\"Calm Bambi in the forest 3\",\"en\":\"Calm Bambi in the forest 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"72×100cm 4枚組 , Photo by Ikuya Sasaki\",\"en\":\"72×100cm a 4-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2396,7 +2396,7 @@
     },
     {
       "dc:identifier" : "CalmBambiInTheForest0004",
-      "dc:title" : "Calm Bambi in the forest 4",
+      "dc:title" : "{\"ja\":\"Calm Bambi in the forest 4\",\"en\":\"Calm Bambi in the forest 4\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"72×100cm 4枚組 , Photo by Ikuya Sasaki\",\"en\":\"72×100cm a 4-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2434,7 +2434,7 @@
     },
     {
       "dc:identifier" : "DeerInTheFog0001",
-      "dc:title" : "Deer in the fog 1",
+      "dc:title" : "{\"ja\":\"Deer in the fog 1\",\"en\":\"Deer in the fog 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"80×100cm 3枚組 , Photo by Ikuya Sasaki\",\"en\":\"80×100cm a 3-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2472,7 +2472,7 @@
     },
     {
       "dc:identifier" : "DeerInTheFog0002",
-      "dc:title" : "Deer in the fog 2",
+      "dc:title" : "{\"ja\":\"Deer in the fog 2\",\"en\":\"Deer in the fog 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"80×100cm 3枚組 , Photo by Ikuya Sasaki\",\"en\":\"80×100cm a 3-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2510,7 +2510,7 @@
     },
     {
       "dc:identifier" : "DeerInTheFog0003",
-      "dc:title" : "Deer in the fog 3",
+      "dc:title" : "{\"ja\":\"Deer in the fog 3\",\"en\":\"Deer in the fog 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"80×100cm 3枚組 , Photo by Ikuya Sasaki\",\"en\":\"80×100cm a 3-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2548,7 +2548,7 @@
     },
     {
       "dc:identifier" : "DeerInTheForest0001",
-      "dc:title" : "Deer in the Forest 1",
+      "dc:title" : "{\"ja\":\"Deer in the Forest 1\",\"en\":\"Deer in the Forest 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2021",
       "dc:description" : "{\"ja\":\"240×120cm 6枚組 , Photo by Ikuya Sasaki\",\"en\":\"240×120cm  a 6-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2586,7 +2586,7 @@
     },
     {
       "dc:identifier" : "DeerInTheForest0002",
-      "dc:title" : "Deer in the Forest 2",
+      "dc:title" : "{\"ja\":\"Deer in the Forest 2\",\"en\":\"Deer in the Forest 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2021",
       "dc:description" : "{\"ja\":\"240×120cm 6枚組 , Photo by Ikuya Sasaki\",\"en\":\"240×120cm  a 6-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2624,7 +2624,7 @@
     },
     {
       "dc:identifier" : "DeerInTheForest0003",
-      "dc:title" : "Deer in the Forest 3",
+      "dc:title" : "{\"ja\":\"Deer in the Forest 3\",\"en\":\"Deer in the Forest 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2021",
       "dc:description" : "{\"ja\":\"240×120cm 6枚組 , Photo by Ikuya Sasaki\",\"en\":\"240×120cm  a 6-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2662,7 +2662,7 @@
     },
     {
       "dc:identifier" : "DeerInTheForest0004",
-      "dc:title" : "Deer in the Forest 4",
+      "dc:title" : "{\"ja\":\"Deer in the Forest 4\",\"en\":\"Deer in the Forest 4\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2021",
       "dc:description" : "{\"ja\":\"240×120cm 6枚組 , Photo by Ikuya Sasaki\",\"en\":\"240×120cm  a 6-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2700,7 +2700,7 @@
     },
     {
       "dc:identifier" : "DeerInTheForest0005",
-      "dc:title" : "Deer in the Forest 5",
+      "dc:title" : "{\"ja\":\"Deer in the Forest 5\",\"en\":\"Deer in the Forest 5\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2021",
       "dc:description" : "{\"ja\":\"240×120cm 6枚組 , Photo by Ikuya Sasaki\",\"en\":\"240×120cm  a 6-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2738,7 +2738,7 @@
     },
     {
       "dc:identifier" : "DeerInTheForest0006",
-      "dc:title" : "Deer in the Forest 6",
+      "dc:title" : "{\"ja\":\"Deer in the Forest 6\",\"en\":\"Deer in the Forest 6\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2021",
       "dc:description" : "{\"ja\":\"240×120cm 6枚組 , Photo by Ikuya Sasaki\",\"en\":\"240×120cm  a 6-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -2776,7 +2776,7 @@
     },
     {
       "dc:identifier" : "DirectionOfThings0001",
-      "dc:title" : "DIRECTION OF THINGS",
+      "dc:title" : "{\"ja\":\"DIRECTION OF THINGS\",\"en\":\"DIRECTION OF THINGS\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1997",
       "dc:description" : "{\"ja\":\"218.2×157.6cm\",\"en\":\"218.2×157.6cm\"}",
@@ -2814,7 +2814,7 @@
     },
     {
       "dc:identifier" : "DontLoseHeart0001",
-      "dc:title" : "DON'T LOSE HEART",
+      "dc:title" : "{\"ja\":\"DON'T LOSE HEART\",\"en\":\"DON'T LOSE HEART\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1997",
       "dc:description" : "{\"ja\":\"218.2×157.6cm\",\"en\":\"218.2×157.6cm\"}",
@@ -2852,7 +2852,7 @@
     },
     {
       "dc:identifier" : "DragonAndTiger-Dragon0001",
-      "dc:title" : "龍虎図(2枚組/龍)",
+      "dc:title" : "{\"ja\":\"龍虎図(2枚組/龍)\",\"en\":\"Dragon and Tiger-Dragon\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 2枚組\",\"en\":\"180×90cm  a 2-piece painting series\"}",
@@ -2890,7 +2890,7 @@
     },
     {
       "dc:identifier" : "DragonAndTiger-Tiger0001",
-      "dc:title" : "龍虎図(2枚組/虎)",
+      "dc:title" : "{\"ja\":\"龍虎図(2枚組/虎)\",\"en\":\"Dragon and Tiger-Tiger\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 2枚組\",\"en\":\"180×90cm  a 2-piece painting series\"}",
@@ -2928,7 +2928,7 @@
     },
     {
       "dc:identifier" : "DragonInTheClouds0001",
-      "dc:title" : "雲龍図",
+      "dc:title" : "{\"ja\":\"雲龍図\",\"en\":\"Dragon in the clouds\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -2966,7 +2966,7 @@
     },
     {
       "dc:identifier" : "EhonNoJidosha0001",
-      "dc:title" : "えほんのじどうしゃ",
+      "dc:title" : "{\"ja\":\"えほんのじどうしゃ\",\"en\":\"Ehon No Jidosha\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2008",
       "dc:description" : "{\"ja\":null,\"en\":null}",
@@ -3004,7 +3004,7 @@
     },
     {
       "dc:identifier" : "ElephantInMyHeart0001",
-      "dc:title" : "私の心の象",
+      "dc:title" : "{\"ja\":\"私の心の象\",\"en\":\"Elephant in my heart\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30.5×38.5cm , Photo by Ikuya Sasaki\",\"en\":\"30.5×38.5cm , Photo by Ikuya Sasaki\"}",
@@ -3042,7 +3042,7 @@
     },
     {
       "dc:identifier" : "EyesThatSeeNothing0001",
-      "dc:title" : "何も見ていない眼",
+      "dc:title" : "{\"ja\":\"何も見ていない眼\",\"en\":\"Eyes that see nothing\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"88.5×34cm , Photo by Ikuya Sasaki\",\"en\":\"88.5×34cm , Photo by Ikuya Sasaki\"}",
@@ -3080,7 +3080,7 @@
     },
     {
       "dc:identifier" : "GazingAtTheTree0001",
-      "dc:title" : "樹を見つめる",
+      "dc:title" : "{\"ja\":\"樹を見つめる\",\"en\":\"Gazing at the tree\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"165×25cm , Photo by Ikuya Sasaki\",\"en\":\"165×25cm , Photo by Ikuya Sasaki\"}",
@@ -3118,7 +3118,7 @@
     },
     {
       "dc:identifier" : "GazingEyes0001",
-      "dc:title" : "見つめる眼",
+      "dc:title" : "{\"ja\":\"見つめる眼\",\"en\":\"Gazing eyes\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30.5×23.5cm , Photo by Ikuya Sasaki\",\"en\":\"30.5×23.5cm , Photo by Ikuya Sasaki\"}",
@@ -3156,7 +3156,7 @@
     },
     {
       "dc:identifier" : "Gorilla0001",
-      "dc:title" : "GORILLA No.1",
+      "dc:title" : "{\"ja\":\"GORILLA No.1\",\"en\":\"GORILLA No.1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1996",
       "dc:description" : "{\"ja\":\"218.2×157.6cm\",\"en\":\"218.2×157.6cm\"}",
@@ -3194,7 +3194,7 @@
     },
     {
       "dc:identifier" : "Gorrila0002",
-      "dc:title" : "GORILLA No.2",
+      "dc:title" : "{\"ja\":\"GORILLA No.2\",\"en\":\"GORILLA No.2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1996",
       "dc:description" : "{\"ja\":\"218.2×157.6cm\",\"en\":\"218.2×157.6cm\"}",
@@ -3232,7 +3232,7 @@
     },
     {
       "dc:identifier" : "GreatJoyDeepSorrow0001",
-      "dc:title" : "GREAT JOY, DEEP SORROW",
+      "dc:title" : "{\"ja\":\"GREAT JOY, DEEP SORROW\",\"en\":\"GREAT JOY, DEEP SORROW\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1998",
       "dc:description" : "{\"ja\":\"116,7×91cm×2枚\",\"en\":\"116,7×91cm×2sheets\"}",
@@ -3270,7 +3270,7 @@
     },
     {
       "dc:identifier" : "IamInTheCenterIneverMoved0001",
-      "dc:title" : "I am in the center,  I never moved.",
+      "dc:title" : "{\"ja\":\"I am in the center,  I never moved.\",\"en\":\"I am in the center,  I never moved.\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -3308,7 +3308,7 @@
     },
     {
       "dc:identifier" : "IfIHaveMyLife0001",
-      "dc:title" : "IF I HAVE MY LIFE",
+      "dc:title" : "{\"ja\":\"IF I HAVE MY LIFE\",\"en\":\"IF I HAVE MY LIFE\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1998",
       "dc:description" : "{\"ja\":\"157×218cm\",\"en\":\"157×218cm\"}",
@@ -3346,7 +3346,7 @@
     },
     {
       "dc:identifier" : "InterFM0001",
-      "dc:title" : "Inter FM",
+      "dc:title" : "{\"ja\":\"Inter FM\",\"en\":\"Inter FM\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1999",
       "dc:description" : "{\"ja\":null,\"en\":null}",
@@ -3384,7 +3384,7 @@
     },
     {
       "dc:identifier" : "ItsHerOwnWayOfLiving0001",
-      "dc:title" : "IT'S HER OWN WAY OF LIVING(Vol.1)",
+      "dc:title" : "{\"ja\":\"IT'S HER OWN WAY OF LIVING(Vol.1)\",\"en\":\"IT'S HER OWN WAY OF LIVING\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1998",
       "dc:description" : "{\"ja\":\"162×112cm\",\"en\":\"162×112cm\"}",
@@ -3422,7 +3422,7 @@
     },
     {
       "dc:identifier" : "IWillGiveYouThisFlower0001",
-      "dc:title" : "I will give you this flower ",
+      "dc:title" : "{\"ja\":\"I will give you this flower \",\"en\":\"I will give you this flower \"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -3460,7 +3460,7 @@
     },
     {
       "dc:identifier" : "LakeAtNight0001",
-      "dc:title" : "夜の湖",
+      "dc:title" : "{\"ja\":\"夜の湖\",\"en\":\"Lake at night\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30.5×38cm , Photo by Ikuya Sasaki\",\"en\":\"30.5×38cm , Photo by Ikuya Sasaki\"}",
@@ -3498,7 +3498,7 @@
     },
     {
       "dc:identifier" : "LetsGoGoWillSmith",
-      "dc:title" : "LET'S GO! GO! WILL SMITH",
+      "dc:title" : "{\"ja\":\"LET'S GO! GO! WILL SMITH\",\"en\":\"LET'S GO GO WILL SMITH\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1999",
       "dc:description" : "{\"ja\":null,\"en\":null}",
@@ -3536,7 +3536,7 @@
     },
     {
       "dc:identifier" : "LikeAnElephantInTheForest0001",
-      "dc:title" : "林の中の象のように １ 　",
+      "dc:title" : "{\"ja\":\"林の中の象のように １ 　\",\"en\":\"Like An Elephant In The Forest\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"210×430cm\",\"en\":\"210×430cm\"}",
@@ -3574,7 +3574,7 @@
     },
     {
       "dc:identifier" : "LiveLifeLove0001",
-      "dc:title" : "LIVE LIFE LOVE",
+      "dc:title" : "{\"ja\":\"LIVE LIFE LOVE\",\"en\":\"LIVE LIFE LOVE\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1995",
       "dc:description" : "{\"ja\":\"216.0×157.0cm\",\"en\":\"216.0×157.0cm\"}",
@@ -3612,7 +3612,7 @@
     },
     {
       "dc:identifier" : "LoveJuice0001",
-      "dc:title" : "LOVE JUICE",
+      "dc:title" : "{\"ja\":\"LOVE JUICE\",\"en\":\"LOVE JUICE\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1998",
       "dc:description" : "{\"ja\":\"157×218cm\",\"en\":\"157×218cm\"}",
@@ -3650,7 +3650,7 @@
     },
     {
       "dc:identifier" : "MajesticElephant0001",
-      "dc:title" : "Majestic elephant",
+      "dc:title" : "{\"ja\":\"Majestic elephant\",\"en\":\"Majestic elephant\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"200×150cm\",\"en\":\"200×150cm\"}",
@@ -3688,7 +3688,7 @@
     },
     {
       "dc:identifier" : "MarieAndMary0001",
-      "dc:title" : "Marie and Mary",
+      "dc:title" : "{\"ja\":\"Marie and Mary\",\"en\":\"Marie and Mary\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"150×200cm\",\"en\":\"150×200cm\"}",
@@ -3726,7 +3726,7 @@
     },
     {
       "dc:identifier" : "MAYAMAXXsAboutLove0001",
-      "dc:title" : "MAYAMAXX's about love 1",
+      "dc:title" : "{\"ja\":\"MAYAMAXX's about love 1\",\"en\":\"MAYAMAXX's about love 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1990s",
       "dc:description" : "{\"ja\":null,\"en\":null}",
@@ -3764,7 +3764,7 @@
     },
     {
       "dc:identifier" : "MAYAMAXXsAboutLove0002",
-      "dc:title" : "MAYAMAXX's about love 2",
+      "dc:title" : "{\"ja\":\"MAYAMAXX's about love 2\",\"en\":\"MAYAMAXX's about love 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1990s",
       "dc:description" : "{\"ja\":null,\"en\":null}",
@@ -3802,7 +3802,7 @@
     },
     {
       "dc:identifier" : "Midsummer0001",
-      "dc:title" : "Midsummer 1",
+      "dc:title" : "{\"ja\":\"Midsummer 1\",\"en\":\"Midsummer 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -3840,7 +3840,7 @@
     },
     {
       "dc:identifier" : "Midsummer0002",
-      "dc:title" : "Midsummer 2",
+      "dc:title" : "{\"ja\":\"Midsummer 2\",\"en\":\"Midsummer 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -3878,7 +3878,7 @@
     },
     {
       "dc:identifier" : "Midsummer0003",
-      "dc:title" : "Midsummer 3",
+      "dc:title" : "{\"ja\":\"Midsummer 3\",\"en\":\"Midsummer 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -3916,7 +3916,7 @@
     },
     {
       "dc:identifier" : "Midsummer0004",
-      "dc:title" : "Midsummer 4",
+      "dc:title" : "{\"ja\":\"Midsummer 4\",\"en\":\"Midsummer 4\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -3954,7 +3954,7 @@
     },
     {
       "dc:identifier" : "Midsummer0005",
-      "dc:title" : "Midsummer 5",
+      "dc:title" : "{\"ja\":\"Midsummer 5\",\"en\":\"Midsummer 5\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -3992,7 +3992,7 @@
     },
     {
       "dc:identifier" : "Midsummer0006",
-      "dc:title" : "Midsummer 6",
+      "dc:title" : "{\"ja\":\"Midsummer 6\",\"en\":\"Midsummer 6\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4030,7 +4030,7 @@
     },
     {
       "dc:identifier" : "Midsummer0007",
-      "dc:title" : "Midsummer 7",
+      "dc:title" : "{\"ja\":\"Midsummer 7\",\"en\":\"Midsummer 7\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4068,7 +4068,7 @@
     },
     {
       "dc:identifier" : "Midsummer0008",
-      "dc:title" : "Midsummer 8",
+      "dc:title" : "{\"ja\":\"Midsummer 8\",\"en\":\"Midsummer 8\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4106,7 +4106,7 @@
     },
     {
       "dc:identifier" : "Midsummer0009",
-      "dc:title" : "Midsummer 9",
+      "dc:title" : "{\"ja\":\"Midsummer 9\",\"en\":\"Midsummer 9\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4144,7 +4144,7 @@
     },
     {
       "dc:identifier" : "Midsummer0010",
-      "dc:title" : "Midsummer 10",
+      "dc:title" : "{\"ja\":\"Midsummer 10\",\"en\":\"Midsummer 10\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4182,7 +4182,7 @@
     },
     {
       "dc:identifier" : "Midsummer0011",
-      "dc:title" : "Midsummer 11",
+      "dc:title" : "{\"ja\":\"Midsummer 11\",\"en\":\"Midsummer 11\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4220,7 +4220,7 @@
     },
     {
       "dc:identifier" : "Midsummer0012",
-      "dc:title" : "Midsummer 12",
+      "dc:title" : "{\"ja\":\"Midsummer 12\",\"en\":\"Midsummer 12\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4258,7 +4258,7 @@
     },
     {
       "dc:identifier" : "Midsummer0013",
-      "dc:title" : "Midsummer 13",
+      "dc:title" : "{\"ja\":\"Midsummer 13\",\"en\":\"Midsummer 13\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4296,7 +4296,7 @@
     },
     {
       "dc:identifier" : "Midsummer0014",
-      "dc:title" : "Midsummer 14",
+      "dc:title" : "{\"ja\":\"Midsummer 14\",\"en\":\"Midsummer 14\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4334,7 +4334,7 @@
     },
     {
       "dc:identifier" : "Midsummer0015",
-      "dc:title" : "Midsummer 14",
+      "dc:title" : "{\"ja\":\"Midsummer 15\",\"en\":\"Midsummer 15\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4372,7 +4372,7 @@
     },
     {
       "dc:identifier" : "Midsummer0016",
-      "dc:title" : "Midsummer 14",
+      "dc:title" : "{\"ja\":\"Midsummer 16\",\"en\":\"Midsummer 16\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 16枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 16-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4410,7 +4410,7 @@
     },
     {
       "dc:identifier" : "MilkyWay0001",
-      "dc:title" : "Milky Way",
+      "dc:title" : "{\"ja\":\"Milky Way\",\"en\":\"Milky Way\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -4448,7 +4448,7 @@
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0001",
-      "dc:title" : "Night Moon and New Moon 1",
+      "dc:title" : "{\"ja\":\"Night Moon and New Moon 1\",\"en\":\"Night Moon and New Moon 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 10枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 10-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4486,7 +4486,7 @@
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0002",
-      "dc:title" : "Night Moon and New Moon 2",
+      "dc:title" : "{\"ja\":\"Night Moon and New Moon 2\",\"en\":\"Night Moon and New Moon 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 10枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 10-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4524,7 +4524,7 @@
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0003",
-      "dc:title" : "Night Moon and New Moon 3",
+      "dc:title" : "{\"ja\":\"Night Moon and New Moon 3\",\"en\":\"Night Moon and New Moon 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 10枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 10-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4562,7 +4562,7 @@
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0004",
-      "dc:title" : "Night Moon and New Moon 4",
+      "dc:title" : "{\"ja\":\"Night Moon and New Moon 4\",\"en\":\"Night Moon and New Moon 4\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 10枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 10-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4600,7 +4600,7 @@
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0005",
-      "dc:title" : "Night Moon and New Moon 5",
+      "dc:title" : "{\"ja\":\"Night Moon and New Moon 5\",\"en\":\"Night Moon and New Moon 5\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 10枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 10-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4638,7 +4638,7 @@
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0006",
-      "dc:title" : "Night Moon and New Moon 6",
+      "dc:title" : "{\"ja\":\"Night Moon and New Moon 6\",\"en\":\"Night Moon and New Moon 6\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 10枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 10-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4676,7 +4676,7 @@
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0007",
-      "dc:title" : "Night Moon and New Moon 7",
+      "dc:title" : "{\"ja\":\"Night Moon and New Moon 7\",\"en\":\"Night Moon and New Moon 7\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 10枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 10-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4714,7 +4714,7 @@
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0008",
-      "dc:title" : "Night Moon and New Moon 8",
+      "dc:title" : "{\"ja\":\"Night Moon and New Moon 8\",\"en\":\"Night Moon and New Moon 8\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 10枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 10-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4752,7 +4752,7 @@
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0009",
-      "dc:title" : "Night Moon and New Moon 9",
+      "dc:title" : "{\"ja\":\"Night Moon and New Moon 9\",\"en\":\"Night Moon and New Moon 9\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 10枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 10-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4790,7 +4790,7 @@
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0010",
-      "dc:title" : "Night Moon and New Moon 10",
+      "dc:title" : "{\"ja\":\"Night Moon and New Moon 10\",\"en\":\"Night Moon and New Moon 10\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"各30×30cm 10枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 10-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -4828,7 +4828,7 @@
     },
     {
       "dc:identifier" : "OrangutanInMyHeart0001",
-      "dc:title" : "私の心のオランウータン",
+      "dc:title" : "{\"ja\":\"私の心のオランウータン\",\"en\":\"Orangutan in my heart\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30.5×28cm , Photo by Ikuya Sasaki\",\"en\":\"30.5×28cm , Photo by Ikuya Sasaki\"}",
@@ -4866,7 +4866,7 @@
     },
     {
       "dc:identifier" : "ORPHAN(IUsedHaveALotOfFamily)0001",
-      "dc:title" : "ORPHAN(I used have a lot of family)",
+      "dc:title" : "{\"ja\":\"ORPHAN(I used have a lot of family)\",\"en\":\"ORPHAN(I used have a lot of family)\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1996",
       "dc:description" : "{\"ja\":\"54.6×39.4cm\",\"en\":\"54.6×39.4cm\"}",
@@ -4904,7 +4904,7 @@
     },
     {
       "dc:identifier" : "OtterInMyHeart0001",
-      "dc:title" : "私の心のラッコ",
+      "dc:title" : "{\"ja\":\"私の心のラッコ\",\"en\":\"Otter in my heart\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30.5×32cm , Photo by Ikuya Sasaki\",\"en\":\"30.5×32cm , Photo by Ikuya Sasaki\"}",
@@ -4942,7 +4942,7 @@
     },
     {
       "dc:identifier" : "Partner0001",
-      "dc:title" : "相棒",
+      "dc:title" : "{\"ja\":\"相棒\",\"en\":\"Partner\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"30.5×36cm , Photo by Ikuya Sasaki\",\"en\":\"30.5×36cm , Photo by Ikuya Sasakisaki\"}",
@@ -4980,7 +4980,7 @@
     },
     {
       "dc:identifier" : "PleaseStopCrying0001",
-      "dc:title" : "PLEASE STOP CRYING",
+      "dc:title" : "{\"ja\":\"PLEASE STOP CRYING\",\"en\":\"PLEASE STOP CRYING\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1996",
       "dc:description" : "{\"ja\":\"115.0×85.0cm\",\"en\":\"115.0×85.0cm\"}",
@@ -5018,7 +5018,7 @@
     },
     {
       "dc:identifier" : "PortanXmas0001",
-      "dc:title" : "ポルタんクリスマス",
+      "dc:title" : "{\"ja\":\"ポルタんクリスマス\",\"en\":\"Portan Xmas\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2010s",
       "dc:description" : "{\"ja\":null,\"en\":null}",
@@ -5056,7 +5056,7 @@
     },
     {
       "dc:identifier" : "SeaAndSky0001",
-      "dc:title" : "Sea and sky",
+      "dc:title" : "{\"ja\":\"Sea and sky\",\"en\":\"Sea and sky\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"250×180cm\",\"en\":\"250×180cm\"}",
@@ -5094,7 +5094,7 @@
     },
     {
       "dc:identifier" : "SevenIndians0001",
-      "dc:title" : "Seven Native Americans 1",
+      "dc:title" : "{\"ja\":\"Seven Native Americans 1\",\"en\":\"Seven Native Americans 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2019",
       "dc:description" : "{\"ja\":\"140×90cm 7枚組 , Photo by Ikuya Sasaki\",\"en\":\"140×90cm  a 7-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5132,7 +5132,7 @@
     },
     {
       "dc:identifier" : "SevenIndians0002",
-      "dc:title" : "Seven Native Americans 2",
+      "dc:title" : "{\"ja\":\"Seven Native Americans 2\",\"en\":\"Seven Native Americans 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2019",
       "dc:description" : "{\"ja\":\"140×90cm 7枚組 , Photo by Ikuya Sasaki\",\"en\":\"140×90cm  a 7-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5170,7 +5170,7 @@
     },
     {
       "dc:identifier" : "SevenIndians0003",
-      "dc:title" : "Seven Native Americans 3",
+      "dc:title" : "{\"ja\":\"Seven Native Americans 3\",\"en\":\"Seven Native Americans 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2019",
       "dc:description" : "{\"ja\":\"140×90cm 7枚組 , Photo by Ikuya Sasaki\",\"en\":\"140×90cm  a 7-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5208,7 +5208,7 @@
     },
     {
       "dc:identifier" : "SevenIndians0004",
-      "dc:title" : "Seven Native Americans 4",
+      "dc:title" : "{\"ja\":\"Seven Native Americans 4\",\"en\":\"Seven Native Americans 4\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2019",
       "dc:description" : "{\"ja\":\"140×90cm 7枚組 , Photo by Ikuya Sasaki\",\"en\":\"140×90cm  a 7-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5246,7 +5246,7 @@
     },
     {
       "dc:identifier" : "SevenIndians0005",
-      "dc:title" : "Seven Native Americans 5",
+      "dc:title" : "{\"ja\":\"Seven Native Americans 5\",\"en\":\"Seven Native Americans 5\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2019",
       "dc:description" : "{\"ja\":\"140×90cm 7枚組 , Photo by Ikuya Sasaki\",\"en\":\"140×90cm  a 7-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5284,7 +5284,7 @@
     },
     {
       "dc:identifier" : "SevenIndians0006",
-      "dc:title" : "Seven Native Americans 6",
+      "dc:title" : "{\"ja\":\"Seven Native Americans 6\",\"en\":\"Seven Native Americans 6\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2019",
       "dc:description" : "{\"ja\":\"140×90cm 7枚組 , Photo by Ikuya Sasaki\",\"en\":\"140×90cm  a 7-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5322,7 +5322,7 @@
     },
     {
       "dc:identifier" : "SevenIndians0007",
-      "dc:title" : "Seven Native Americans 7",
+      "dc:title" : "{\"ja\":\"Seven Native Americans 7\",\"en\":\"Seven Native Americans 7\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2019",
       "dc:description" : "{\"ja\":\"140×90cm 7枚組 , Photo by Ikuya Sasaki\",\"en\":\"140×90cm  a 7-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5360,7 +5360,7 @@
     },
     {
       "dc:identifier" : "ShyHorseInTheGreenBreeze0001",
-      "dc:title" : "Shy Horse In The Green Breeze",
+      "dc:title" : "{\"ja\":\"Shy Horse In The Green Breeze\",\"en\":\"Shy Horse In The Green Breeze\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"240×120cm 3枚組 , Photo by Ikuya Sasaki\",\"en\":\"240×120cm a 3-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5398,7 +5398,7 @@
     },
     {
       "dc:identifier" : "SlowlySloth0001",
-      "dc:title" : "Slowly sloth",
+      "dc:title" : "{\"ja\":\"Slowly sloth\",\"en\":\"Slowly sloth\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"200×150cm\",\"en\":\"200×150cm\"}",
@@ -5436,7 +5436,7 @@
     },
     {
       "dc:identifier" : "Snow0001",
-      "dc:title" : "Snow 1",
+      "dc:title" : "{\"ja\":\"Snow 1\",\"en\":\"Snow 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2021",
       "dc:description" : "{\"ja\":\"120×120cm 3枚組 , Photo by Ikuya Sasaki\",\"en\":\"240×120cm a 3-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5474,7 +5474,7 @@
     },
     {
       "dc:identifier" : "Snow0002",
-      "dc:title" : "Snow 2",
+      "dc:title" : "{\"ja\":\"Snow 2\",\"en\":\"Snow 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2021",
       "dc:description" : "{\"ja\":\"120×120cm 3枚組 , Photo by Ikuya Sasaki\",\"en\":\"240×120cm a 3-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5512,7 +5512,7 @@
     },
     {
       "dc:identifier" : "Snow0003",
-      "dc:title" : "Snow 3",
+      "dc:title" : "{\"ja\":\"Snow 3\",\"en\":\"Snow 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2021",
       "dc:description" : "{\"ja\":\"120×120cm 3枚組 , Photo by Ikuya Sasaki\",\"en\":\"240×120cm a 3-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5550,7 +5550,7 @@
     },
     {
       "dc:identifier" : "SomeoneIsDoingSomething0001",
-      "dc:title" : "SOMEONE IS DOING SOMETHING",
+      "dc:title" : "{\"ja\":\"SOMEONE IS DOING SOMETHING\",\"en\":\"SOMEONE IS DOING SOMETHING\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1994",
       "dc:description" : "{\"ja\":\"218.4×158.3cm\",\"en\":\"218.4×158.3cm\"}",
@@ -5588,7 +5588,7 @@
     },
     {
       "dc:identifier" : "SuddenlyIFeelLonely0001",
-      "dc:title" : "SUDDENLY I FEEL LONELY",
+      "dc:title" : "{\"ja\":\"SUDDENLY I FEEL LONELY\",\"en\":\"SUDDENLY I FEEL LONELY\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1997",
       "dc:description" : "{\"ja\":\"72.7×54.5cm\",\"en\":\"72.7×54.5cm\"}",
@@ -5626,7 +5626,7 @@
     },
     {
       "dc:identifier" : "TakeAnythingYouLike0001",
-      "dc:title" : "TAKE ANYTHING YOU LIKE",
+      "dc:title" : "{\"ja\":\"TAKE ANYTHING YOU LIKE\",\"en\":\"TAKE ANYTHING YOU LIKE\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1997",
       "dc:description" : "{\"ja\":\"54.5×42.4cm\",\"en\":\"54.5×42.4cm\"}",
@@ -5664,7 +5664,7 @@
     },
     {
       "dc:identifier" : "TenSupporters0001",
-      "dc:title" : "Ten Supporters",
+      "dc:title" : "{\"ja\":\"Ten Supporters\",\"en\":\"Ten Supporters\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1990s",
       "dc:description" : "{\"ja\":null,\"en\":null}",
@@ -5702,7 +5702,7 @@
     },
     {
       "dc:identifier" : "The2ndGrowthProject0001",
-      "dc:title" : "THE 2nd GROWTH PROJECT",
+      "dc:title" : "{\"ja\":\"THE 2nd GROWTH PROJECT\",\"en\":\"THE 2nd GROWTH PROJECT\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1998",
       "dc:description" : "{\"ja\":\"157×218cm\",\"en\":\"157×218cm\"}",
@@ -5740,7 +5740,7 @@
     },
     {
       "dc:identifier" : "TheUnseenLandscape0001",
-      "dc:title" : "いままで見えなかった風景 1",
+      "dc:title" : "{\"ja\":\"いままで見えなかった風景 1\",\"en\":\"The unseen landscape\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"206×22cm , Photo by Ikuya Sasaki\",\"en\":\"206×22cm , Photo by Ikuya Sasaki\"}",
@@ -5778,7 +5778,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0001",
-      "dc:title" : "見つめるリス Everybody 1",
+      "dc:title" : "{\"ja\":\"見つめるリス Everybody 1\",\"en\":\"The Watching Squirrel Everybody 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"30×30cm 9枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 9-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5816,7 +5816,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0002",
-      "dc:title" : "見つめるリス Everybody 2",
+      "dc:title" : "{\"ja\":\"見つめるリス Everybody 2\",\"en\":\"The Watching Squirrel Everybody 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"30×30cm 9枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 9-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5854,7 +5854,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0003",
-      "dc:title" : "見つめるリス Everybody 3",
+      "dc:title" : "{\"ja\":\"見つめるリス Everybody 3\",\"en\":\"The Watching Squirrel Everybody 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"30×30cm 9枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 9-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5892,7 +5892,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0004",
-      "dc:title" : "見つめるリス Everybody 4",
+      "dc:title" : "{\"ja\":\"見つめるリス Everybody 4\",\"en\":\"The Watching Squirrel Everybody 4\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"30×30cm 9枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 9-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5930,7 +5930,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0005",
-      "dc:title" : "見つめるリス Everybody 5",
+      "dc:title" : "{\"ja\":\"見つめるリス Everybody 5\",\"en\":\"The Watching Squirrel Everybody 5\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"30×30cm 9枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 9-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -5968,7 +5968,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0006",
-      "dc:title" : "見つめるリス Everybody 6",
+      "dc:title" : "{\"ja\":\"見つめるリス Everybody 6\",\"en\":\"The Watching Squirrel Everybody 6\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"30×30cm 9枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 9-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -6006,7 +6006,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0007",
-      "dc:title" : "見つめるリス Everybody 7",
+      "dc:title" : "{\"ja\":\"見つめるリス Everybody 7\",\"en\":\"The Watching Squirrel Everybody 7\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"30×30cm 9枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 9-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -6044,7 +6044,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0008",
-      "dc:title" : "見つめるリス Everybody 8",
+      "dc:title" : "{\"ja\":\"見つめるリス Everybody 8\",\"en\":\"The Watching Squirrel Everybody 8\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"30×30cm 9枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 9-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -6082,7 +6082,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0009",
-      "dc:title" : "見つめるリス Everybody 9",
+      "dc:title" : "{\"ja\":\"見つめるリス Everybody 9\",\"en\":\"The Watching Squirrel Everybody 9\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"30×30cm 9枚組 , Photo by Ikuya Sasaki\",\"en\":\"30×30cm a 9-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -6120,7 +6120,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelNobody0001",
-      "dc:title" : "見つめるリス Nobody 1",
+      "dc:title" : "{\"ja\":\"見つめるリス Nobody 1\",\"en\":\"The Watching Squirrel Nobody 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"240×240cm , Photo by Ikuya Sasaki\",\"en\":\"240×240cm , Photo by Ikuya Sasaki\"}",
@@ -6158,7 +6158,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelNobody0002",
-      "dc:title" : "見つめるリス Nobody 2",
+      "dc:title" : "{\"ja\":\"見つめるリス Nobody 2\",\"en\":\"The Watching Squirrel Nobody 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"240×240cm , Photo by Ikuya Sasaki\",\"en\":\"240×240cm , Photo by Ikuya Sasaki\"}",
@@ -6196,7 +6196,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelNobody0003",
-      "dc:title" : "見つめるリス Nobody 3",
+      "dc:title" : "{\"ja\":\"見つめるリス Nobody 3\",\"en\":\"The Watching Squirrel Nobody 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"240×240cm , Photo by Ikuya Sasaki\",\"en\":\"240×240cm , Photo by Ikuya Sasaki\"}",
@@ -6234,7 +6234,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelSomebody0001",
-      "dc:title" : "見つめるリス Somebody 1",
+      "dc:title" : "{\"ja\":\"見つめるリス Somebody 1\",\"en\":\"The Watching Squirrel Somebody 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"180×90cm , Photo by Ikuya Sasaki\",\"en\":\"180×90cm , Photo by Ikuya Sasaki\"}",
@@ -6272,7 +6272,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelSomebody0002",
-      "dc:title" : "見つめるリス Somebody 2",
+      "dc:title" : "{\"ja\":\"見つめるリス Somebody 2\",\"en\":\"The Watching Squirrel Somebody 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"180×90cm , Photo by Ikuya Sasaki\",\"en\":\"180×90cm , Photo by Ikuya Sasaki\"}",
@@ -6310,7 +6310,7 @@
     },
     {
       "dc:identifier" : "TheWatchingSquirrelSomebody0003",
-      "dc:title" : "見つめるリス Somebody 3",
+      "dc:title" : "{\"ja\":\"見つめるリス Somebody 3\",\"en\":\"The Watching Squirrel Somebody 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2022",
       "dc:description" : "{\"ja\":\"180×90cm , Photo by Ikuya Sasaki\",\"en\":\"180×90cm , Photo by Ikuya Sasaki\"}",
@@ -6348,7 +6348,7 @@
     },
     {
       "dc:identifier" : "ThisIsForYou0001",
-      "dc:title" : "This is for you ",
+      "dc:title" : "{\"ja\":\"This is for you \",\"en\":\"This is for you \"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -6386,7 +6386,7 @@
     },
     {
       "dc:identifier" : "ThumbPrincess0001",
-      "dc:title" : "おやゆび姫",
+      "dc:title" : "{\"ja\":\"おやゆび姫\",\"en\":\"Thumb Princess\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"94.5×34.5cm , Photo by Ikuya Sasaki\",\"en\":\"94.5×34.5cm , Photo by Ikuya Sasaki\"}",
@@ -6424,7 +6424,7 @@
     },
     {
       "dc:identifier" : "TigerFudo0001",
-      "dc:title" : "虎不動図",
+      "dc:title" : "{\"ja\":\"虎不動図\",\"en\":\"Tiger Fudo\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm\",\"en\":\"180×90cm\"}",
@@ -6462,7 +6462,7 @@
     },
     {
       "dc:identifier" : "ToHaveCourage0001",
-      "dc:title" : "勇気を持つために  1",
+      "dc:title" : "{\"ja\":\"勇気を持つために  1\",\"en\":\"To Have Courage 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"152×300cm\",\"en\":\"152×300cm\"}",
@@ -6500,7 +6500,7 @@
     },
     {
       "dc:identifier" : "ToHaveCourage0002",
-      "dc:title" : "勇気を持つために  2",
+      "dc:title" : "{\"ja\":\"勇気を持つために  2\",\"en\":\"To Have Courage 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"152×300cm\",\"en\":\"152×300cm\"}",
@@ -6538,7 +6538,7 @@
     },
     {
       "dc:identifier" : "ToHaveCourage0003",
-      "dc:title" : "勇気を持つために  3",
+      "dc:title" : "{\"ja\":\"勇気を持つために  3\",\"en\":\"To Have Courage 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"152×300cm\",\"en\":\"152×300cm\"}",
@@ -6576,7 +6576,7 @@
     },
     {
       "dc:identifier" : "ToHaveCourage0004",
-      "dc:title" : "勇気を持つために  4",
+      "dc:title" : "{\"ja\":\"勇気を持つために  4\",\"en\":\"To Have Courage 4\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"152×300cm\",\"en\":\"152×300cm\"}",
@@ -6614,7 +6614,7 @@
     },
     {
       "dc:identifier" : "ToHaveCourage0005",
-      "dc:title" : "勇気を持つために  5",
+      "dc:title" : "{\"ja\":\"勇気を持つために  5\",\"en\":\"To Have Courage 5\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"152×300cm\",\"en\":\"152×300cm\"}",
@@ -6652,7 +6652,7 @@
     },
     {
       "dc:identifier" : "ToHaveCourage0006",
-      "dc:title" : "勇気を持つために  6",
+      "dc:title" : "{\"ja\":\"勇気を持つために  6\",\"en\":\"To Have Courage 6\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"152×300cm\",\"en\":\"152×300cm\"}",
@@ -6690,7 +6690,7 @@
     },
     {
       "dc:identifier" : "UnconsciousDeer0001",
-      "dc:title" : "Unconscious Deer 1",
+      "dc:title" : "{\"ja\":\"Unconscious Deer 1\",\"en\":\"Unconscious Deer 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"90×90cm 3枚組 , Photo by Ikuya Sasaki\",\"en\":\"90×90cm 3-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -6728,7 +6728,7 @@
     },
     {
       "dc:identifier" : "UnconsciousDeer0002",
-      "dc:title" : "Unconscious Deer 2",
+      "dc:title" : "{\"ja\":\"Unconscious Deer 2\",\"en\":\"Unconscious Deer 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"90×90cm 3枚組 , Photo by Ikuya Sasaki\",\"en\":\"90×90cm 3-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -6766,7 +6766,7 @@
     },
     {
       "dc:identifier" : "UnconsciousDeer0003",
-      "dc:title" : "Unconscious Deer 3",
+      "dc:title" : "{\"ja\":\"Unconscious Deer 3\",\"en\":\"Unconscious Deer 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"90×90cm 3枚組 , Photo by Ikuya Sasaki\",\"en\":\"90×90cm 3-piece painting series , Photo by Ikuya Sasaki\"}",
@@ -6804,7 +6804,7 @@
     },
     {
       "dc:identifier" : "WhatAreWeDoingInOurLife0001",
-      "dc:title" : "What are we doing in our life?",
+      "dc:title" : "{\"ja\":\"What are we doing in our life?\",\"en\":\"What are we doing in our life?\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1995",
       "dc:description" : "{\"ja\":\"90.0×60.0×2.5cm \",\"en\":\"90.0×60.0×2.5cm \"}",
@@ -6842,7 +6842,7 @@
     },
     {
       "dc:identifier" : "WhiteGibbon0001",
-      "dc:title" : "White gibbon 1",
+      "dc:title" : "{\"ja\":\"White gibbon 1\",\"en\":\"White gibbon 1\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 7枚組\",\"en\":\"180×90cm  a 7-piece painting series\"}",
@@ -6880,7 +6880,7 @@
     },
     {
       "dc:identifier" : "WhiteGibbon0002",
-      "dc:title" : "White gibbon 2",
+      "dc:title" : "{\"ja\":\"White gibbon 2\",\"en\":\"White gibbon 2\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 7枚組\",\"en\":\"180×90cm  a 7-piece painting series\"}",
@@ -6918,7 +6918,7 @@
     },
     {
       "dc:identifier" : "WhiteGibbon0003",
-      "dc:title" : "White gibbon 3",
+      "dc:title" : "{\"ja\":\"White gibbon 3\",\"en\":\"White gibbon 3\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 7枚組\",\"en\":\"180×90cm  a 7-piece painting series\"}",
@@ -6956,7 +6956,7 @@
     },
     {
       "dc:identifier" : "WhiteGibbon0004",
-      "dc:title" : "White gibbon 4",
+      "dc:title" : "{\"ja\":\"White gibbon 4\",\"en\":\"White gibbon 4\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 7枚組\",\"en\":\"180×90cm  a 7-piece painting series\"}",
@@ -6994,7 +6994,7 @@
     },
     {
       "dc:identifier" : "WhiteGibbon0005",
-      "dc:title" : "White gibbon 5",
+      "dc:title" : "{\"ja\":\"White gibbon 5\",\"en\":\"White gibbon 5\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 7枚組\",\"en\":\"180×90cm  a 7-piece painting series\"}",
@@ -7032,7 +7032,7 @@
     },
     {
       "dc:identifier" : "WhiteGibbon0006",
-      "dc:title" : "White gibbon 6",
+      "dc:title" : "{\"ja\":\"White gibbon 6\",\"en\":\"White gibbon 6\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 7枚組\",\"en\":\"180×90cm  a 7-piece painting series\"}",
@@ -7070,7 +7070,7 @@
     },
     {
       "dc:identifier" : "WhiteGibbon0007",
-      "dc:title" : "White gibbon 7",
+      "dc:title" : "{\"ja\":\"White gibbon 7\",\"en\":\"White gibbon 7\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm 7枚組\",\"en\":\"180×90cm  a 7-piece painting series\"}",
@@ -7108,7 +7108,7 @@
     },
     {
       "dc:identifier" : "WhiteElephantKannon0001",
-      "dc:title" : "白象観音図",
+      "dc:title" : "{\"ja\":\"白象観音図\",\"en\":\"White elphant Kannon\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2020",
       "dc:description" : "{\"ja\":\"180×90cm \",\"en\":\"180×90cm \"}",
@@ -7146,7 +7146,7 @@
     },
     {
       "dc:identifier" : "YouThinkExistItExist0001",
-      "dc:title" : "You think exist, It exist",
+      "dc:title" : "{\"ja\":\"You think exist, It exist\",\"en\":\"You think exist, It exist\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "1995",
       "dc:description" : "{\"ja\":\"218.4×158.3cm \",\"en\":\"218.4×158.3cm \"}",
@@ -7184,7 +7184,7 @@
     },
     {
       "dc:identifier" : "ZooZooMiruto0001",
-      "dc:title" : "Zoo, Zoo, Miruto",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto\",\"en\":\"Zoo, Zoo, Miruto\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
@@ -7222,7 +7222,7 @@
     },
     {
       "dc:identifier" : "ZooZooMirutoBear0001",
-      "dc:title" : "Zoo, Zoo, Miruto クマ",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto クマ\",\"en\":\"Zoo, Zoo, Miruto Bear\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
@@ -7260,7 +7260,7 @@
     },
     {
       "dc:identifier" : "ZooZooMirutoCaterpillarBlue0001",
-      "dc:title" : "Zoo, Zoo, Miruto アオムシ 青",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto アオムシ 青\",\"en\":\"Zoo, Zoo, Miruto Caterpillar Blue\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
@@ -7298,7 +7298,7 @@
     },
     {
       "dc:identifier" : "ZooZooMirutoCaterpillarRed0001",
-      "dc:title" : "Zoo, Zoo, Miruto アオムシ 赤",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto アオムシ 赤\",\"en\":\"Zoo, Zoo, Miruto Caterpillar Red\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
@@ -7336,7 +7336,7 @@
     },
     {
       "dc:identifier" : "ZooZooMirutoCatOrange0001",
-      "dc:title" : "Zoo, Zoo, Miruto ねこ オレンジ",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto ねこ オレンジ\",\"en\":\"Zoo, Zoo, Miruto Cat Orange\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
@@ -7374,7 +7374,7 @@
     },
     {
       "dc:identifier" : "ZooZooMirutoCatYellow0001",
-      "dc:title" : "Zoo, Zoo, Miruto ねこ 黄",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto ねこ 黄\",\"en\":\"Zoo, Zoo, Miruto Cat Yellow\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
@@ -7412,7 +7412,7 @@
     },
     {
       "dc:identifier" : "ZooZooMirutoFrogGreen0001",
-      "dc:title" : "Zoo, Zoo, Miruto カエル 緑",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto カエル 緑\",\"en\":\"Zoo, Zoo, Miruto Frog Green\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
@@ -7450,7 +7450,7 @@
     },
     {
       "dc:identifier" : "ZooZooMirutoFrogPink0001",
-      "dc:title" : "Zoo, Zoo, Miruto カエル ピンク",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto カエル ピンク\",\"en\":\"Zoo, Zoo, Miruto Frog Pink\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
@@ -7488,7 +7488,7 @@
     },
     {
       "dc:identifier" : "ZooZooMirutoPanda0001",
-      "dc:title" : "Zoo, Zoo, Miruto パンダ",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto パンダ\",\"en\":\"Zoo, Zoo, Miruto Panda\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
@@ -7526,7 +7526,7 @@
     },
     {
       "dc:identifier" : "ZooZooMirutoRabbitPink0001",
-      "dc:title" : "Zoo, Zoo, Miruto うさぎ ピンク",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto うさぎ ピンク\",\"en\":\"Zoo, Zoo, Miruto Rabbit Pink\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
@@ -7564,7 +7564,7 @@
     },
     {
       "dc:identifier" : "ZooZooMirutoRabbitWhite0001",
-      "dc:title" : "Zoo, Zoo, Miruto うさぎ 白",
+      "dc:title" : "{\"ja\":\"Zoo, Zoo, Miruto うさぎ 白\",\"en\":\"Zoo, Zoo, Miruto Rabbit White\"}",
       "dc:creator" : "MAYA MAXX",
       "dc:date" : "2023",
       "dc:description" : "{\"ja\":\"Zoo, Zoo, Miruto 鳥の塔「Aiちゃん」の兄弟\",\"en\":\"The Siblings of Ai-chan, the Bird Tower\"}",
