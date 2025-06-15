@@ -257,7 +257,9 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
         creator: '作者',
         date: '年代',
         technique: '技法',
-        description: '説明'
+        description: '説明',
+        source:      '出典',    
+        location:    '所蔵'    
       },
       en: {
         pageTitle: 'MAYAMAXX Online Gallery',
@@ -272,7 +274,9 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
         creator: 'Artist',
         date: 'Year',
         technique: 'Technique',
-        description: 'Description'
+        description: 'Description',
+        source:      'Source',     // ← add this
+        location:    'Location'    // ← and this
       }
     };
 
@@ -425,6 +429,9 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
             ${subj    ? `<p><strong>${tLabels.category}:</strong> ${subj}</p>` : ''}
             ${typ     ? `<p><strong>${tLabels.technique}:</strong> ${typ}</p>` : ''}
             ${desc    ? `<p>${desc}</p>` : ''}
+            ${localize(item['dc:source']) ? `<p>${localize(item['dc:source'])}</p>` : ''}
+            ${localize(item['vra:location']) ? `<p>${localize(item['vra:location'])}</p>` 
+              : ''}
           </div>`;
 
         const imgTag = card.querySelector('img');
