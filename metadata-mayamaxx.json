@@ -142,7 +142,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0001",
@@ -178,7 +178,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0002",
@@ -214,7 +214,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0003",
@@ -250,7 +250,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0004",
@@ -286,7 +286,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0005",
@@ -322,7 +322,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0006",
@@ -358,7 +358,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0007",
@@ -394,7 +394,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0008",
@@ -430,7 +430,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0009",
@@ -466,7 +466,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0010",
@@ -502,7 +502,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0011",
@@ -538,7 +538,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0012",
@@ -574,7 +574,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0013",
@@ -610,7 +610,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0014",
@@ -646,7 +646,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0015",
@@ -682,7 +682,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0016",
@@ -718,7 +718,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0017",
@@ -754,7 +754,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0018",
@@ -790,7 +790,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0019",
@@ -826,7 +826,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0020",
@@ -862,7 +862,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0021",
@@ -898,7 +898,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0022",
@@ -934,7 +934,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0023",
@@ -970,7 +970,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0024",
@@ -1006,7 +1006,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0025",
@@ -1042,7 +1042,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0026",
@@ -1078,7 +1078,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0027",
@@ -1114,7 +1114,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0028",
@@ -1150,7 +1150,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0029",
@@ -1186,7 +1186,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AutumnEquinox0030",
@@ -1222,7 +1222,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "AWaterJag0001",
@@ -1330,7 +1330,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BeKindAndHaveTheCourageHeaven0001",
@@ -1366,7 +1366,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BeKindAndHaveTheCourageFuture0001",
@@ -1402,7 +1402,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BeKindAndHaveTheCouragePast0001",
@@ -1438,7 +1438,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BeKindAndHaveTheCouragePresent0001",
@@ -1474,7 +1474,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlackOxFudo0001",
@@ -1510,7 +1510,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlackOxOfLascaux0001",
@@ -1546,7 +1546,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueHorse0001",
@@ -1618,7 +1618,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0003",
@@ -1654,7 +1654,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0004",
@@ -1690,7 +1690,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0005",
@@ -1726,7 +1726,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0006",
@@ -1762,7 +1762,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0007",
@@ -1798,7 +1798,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0009",
@@ -1834,7 +1834,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0010",
@@ -1870,7 +1870,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0011",
@@ -1906,7 +1906,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0012",
@@ -1942,7 +1942,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0013",
@@ -1978,7 +1978,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0014",
@@ -2014,7 +2014,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueLightInTheSnow0015",
@@ -2050,7 +2050,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueOrangutan0001",
@@ -2086,7 +2086,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueOrangutan0002",
@@ -2122,7 +2122,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "BlueOrangutan0003",
@@ -2158,7 +2158,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Bow0001",
@@ -2194,7 +2194,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "CalmBambiInTheForest0001",
@@ -2230,7 +2230,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "CalmBambiInTheForest0002",
@@ -2266,7 +2266,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "CalmBambiInTheForest0003",
@@ -2302,7 +2302,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "CalmBambiInTheForest0004",
@@ -2338,7 +2338,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "CycleCherryBlossoms0001",
@@ -2374,7 +2374,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "CycleCherryBlossoms0002",
@@ -2410,7 +2410,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "CycleRainClouds0001",
@@ -2446,7 +2446,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "CycleWildPlants0001",
@@ -2482,7 +2482,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DeerInTheFog0001",
@@ -2518,7 +2518,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DeerInTheFog0002",
@@ -2554,7 +2554,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DeerInTheFog0003",
@@ -2590,7 +2590,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DeerInTheForest0001",
@@ -2626,7 +2626,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DeerInTheForest0002",
@@ -2662,7 +2662,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DeerInTheForest0003",
@@ -2698,7 +2698,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DeerInTheForest0004",
@@ -2734,7 +2734,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DeerInTheForest0005",
@@ -2770,7 +2770,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DeerInTheForest0006",
@@ -2806,7 +2806,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DirectionOfThings0001",
@@ -2914,7 +2914,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DragonAndTiger-Tiger0001",
@@ -2950,7 +2950,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "DragonInTheClouds0001",
@@ -2986,7 +2986,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "EhonNoJidosha0001",
@@ -3058,7 +3058,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "EyesThatSeeNothing0001",
@@ -3094,7 +3094,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "GazingAtTheTree0001",
@@ -3130,7 +3130,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "GazingEyes0001",
@@ -3166,7 +3166,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Gorilla0001",
@@ -3310,7 +3310,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "IfIHaveMyLife0001",
@@ -3454,7 +3454,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "KawaiiOrangutan0001",
@@ -3490,7 +3490,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "LakeAtNight0001",
@@ -3526,7 +3526,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "LetsGoGoWillSmith",
@@ -3598,7 +3598,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "LiveLifeLove0001",
@@ -3706,7 +3706,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "MarieAndMary0001",
@@ -3742,7 +3742,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "MAYAMAXXsAboutLove0001",
@@ -3778,7 +3778,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "MAYAMAXXsAboutLove0002",
@@ -3814,7 +3814,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0001",
@@ -3850,7 +3850,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0002",
@@ -3886,7 +3886,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0003",
@@ -3922,7 +3922,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0004",
@@ -3958,7 +3958,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0005",
@@ -3994,7 +3994,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0006",
@@ -4030,7 +4030,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0007",
@@ -4066,7 +4066,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0008",
@@ -4102,7 +4102,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0009",
@@ -4138,7 +4138,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0010",
@@ -4174,7 +4174,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0011",
@@ -4210,7 +4210,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0012",
@@ -4246,7 +4246,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0013",
@@ -4282,7 +4282,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0014",
@@ -4318,7 +4318,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0015",
@@ -4354,7 +4354,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Midsummer0016",
@@ -4390,7 +4390,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "MilkyWay0001",
@@ -4426,7 +4426,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Moss0001",
@@ -4462,7 +4462,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Moss0002",
@@ -4498,7 +4498,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0001",
@@ -4534,7 +4534,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0002",
@@ -4570,7 +4570,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0003",
@@ -4606,7 +4606,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0004",
@@ -4642,7 +4642,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0005",
@@ -4678,7 +4678,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0006",
@@ -4714,7 +4714,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0007",
@@ -4750,7 +4750,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0008",
@@ -4786,7 +4786,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0009",
@@ -4822,7 +4822,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "NightMoonAndNewMoon0010",
@@ -4858,7 +4858,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "OrangutanInMyHeart0001",
@@ -4894,7 +4894,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ORPHAN(IUsedHaveALotOfFamily)0001",
@@ -4966,7 +4966,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Partner0001",
@@ -5002,7 +5002,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "PleaseStopCrying0001",
@@ -5110,7 +5110,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "SevenIndians0001",
@@ -5146,7 +5146,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "SevenIndians0002",
@@ -5182,7 +5182,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "SevenIndians0003",
@@ -5218,7 +5218,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "SevenIndians0004",
@@ -5254,7 +5254,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "SevenIndians0005",
@@ -5290,7 +5290,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "SevenIndians0006",
@@ -5326,7 +5326,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "SevenIndians0007",
@@ -5362,7 +5362,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Shinbutsu0001",
@@ -5398,7 +5398,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ShyHorseInTheGreenBreeze0001",
@@ -5434,7 +5434,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "SlowlySloth0001",
@@ -5470,7 +5470,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Snow0001",
@@ -5506,7 +5506,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Snow0002",
@@ -5542,7 +5542,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Snow0003",
@@ -5578,7 +5578,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "SomeoneIsDoingSomething0001",
@@ -5722,7 +5722,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "The2ndGrowthProject0001",
@@ -5794,7 +5794,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0001",
@@ -5830,7 +5830,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0002",
@@ -5866,7 +5866,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0003",
@@ -5902,7 +5902,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0004",
@@ -5938,7 +5938,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0005",
@@ -5974,7 +5974,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0006",
@@ -6010,7 +6010,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0007",
@@ -6046,7 +6046,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0008",
@@ -6082,7 +6082,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelEverybody0009",
@@ -6118,7 +6118,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelNobody0001",
@@ -6154,7 +6154,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelNobody0002",
@@ -6190,7 +6190,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelNobody0003",
@@ -6226,7 +6226,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelSomebody0001",
@@ -6262,7 +6262,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelSomebody0002",
@@ -6298,7 +6298,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TheWatchingSquirrelSomebody0003",
@@ -6334,7 +6334,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ThisIsForYou0001",
@@ -6370,7 +6370,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ThumbPrincess0001",
@@ -6406,7 +6406,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TigerFudo0001",
@@ -6442,7 +6442,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "TitleUnknown0001",
@@ -6478,7 +6478,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ToHaveCourage0001",
@@ -6514,7 +6514,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ToHaveCourage0002",
@@ -6550,7 +6550,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ToHaveCourage0003",
@@ -6586,7 +6586,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ToHaveCourage0004",
@@ -6622,7 +6622,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ToHaveCourage0005",
@@ -6658,7 +6658,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ToHaveCourage0006",
@@ -6694,7 +6694,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "UnconsciousDeer0001",
@@ -6730,7 +6730,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "UnconsciousDeer0002",
@@ -6766,7 +6766,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "UnconsciousDeer0003",
@@ -6802,7 +6802,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "WhatAreWeDoingInOurLife0001",
@@ -6874,7 +6874,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "WhiteGibbon0002",
@@ -6910,7 +6910,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "WhiteGibbon0003",
@@ -6946,7 +6946,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "WhiteGibbon0004",
@@ -6982,7 +6982,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "WhiteGibbon0005",
@@ -7018,7 +7018,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "WhiteGibbon0006",
@@ -7054,7 +7054,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "WhiteGibbon0007",
@@ -7090,7 +7090,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "WhiteElephantKannon0001",
@@ -7126,7 +7126,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "YouThinkExistItExist0001",
@@ -7198,7 +7198,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ZooZooMirutoBear0001",
@@ -7234,7 +7234,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ZooZooMirutoCaterpillarBlue0001",
@@ -7270,7 +7270,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ZooZooMirutoCaterpillarRed0001",
@@ -7306,7 +7306,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ZooZooMirutoCatOrange0001",
@@ -7342,7 +7342,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ZooZooMirutoCatYellow0001",
@@ -7378,7 +7378,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ZooZooMirutoFrogGreen0001",
@@ -7414,7 +7414,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ZooZooMirutoFrogPink0001",
@@ -7450,7 +7450,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ZooZooMirutoPanda0001",
@@ -7486,7 +7486,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ZooZooMirutoRabbitPink0001",
@@ -7522,7 +7522,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "ZooZooMirutoRabbitWhite0001",
@@ -7558,7 +7558,7 @@
       "vra:inscription_en" : null,
       "vra:exhibitionHistory_ja" : null,
       "vra:exhibitionHistory_en" : null,
-      "vra:location" : "{\"ja\":\"作家蔵\",\"en\":\"In the artist’s own collection\"}"
+      "vra:location" : "{\"ja\":null,\"en\":null}"
     },
     {
       "dc:identifier" : "Line0001",
