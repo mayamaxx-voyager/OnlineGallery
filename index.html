@@ -63,12 +63,30 @@
       gap: 20px;
     }
     .artwork {
+      position: relative;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       transition: transform 0.2s ease;
       text-align: left;
+    }
+      /* 複数画像アイコン */
+    .multi-icon {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 24px;
+      height: 24px;
+      pointer-events: none;
+    }
+
+    .multi-icon svg {
+      width: 100%;
+      height: 100%;
+      fill: rgba(255,255,255,0.9);
+      stroke: #333;
+      stroke-width: 1;
     }
     .artwork:hover { transform: scale(1.02); }
     .artwork img {
@@ -107,6 +125,37 @@
       color: #fff;
       cursor: pointer;
     }
+    .nav {
+      position: absolute;
+      top: 50％;
+      transform: translateY(-50%);
+
+      box-sizing: border-box;
+
+      width: 64px;          
+      height: 64px;         
+
+      /* padding を残しても、幅・高さ内に収める */
+      padding: 6px;        
+
+      display: flex;        
+      align-items: center;  
+      justify-content: center;
+
+      background: rgba(0,0,0,0.3);
+      border: none;
+      border-radius: 50%;
+
+      font-size: 2rem;      
+      color: #fff;          
+      cursor: pointer;
+      user-select: none;
+
+      /* JS で切り替え */
+      display: none;
+    }
+    #modal-prev { left:16px; }
+    #modal-next { right:16px; }
    #pageTitle { display: none; }
    /* 作者行は共通なので表示しない */
    .creator-line { display: none; }
@@ -239,6 +288,8 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
   <div id="modal">
     <span id="modal-close">&times;</span>
     <img id="modal-image" src="" alt="detail" />
+    <span id="modal-prev" class="nav">&#10094;</span>
+    <span id="modal-next" class="nav">&#10095;</span>
   </div>
 
   <script>
@@ -360,6 +411,58 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
       fill('yearFilter',yearSet);
     }
 
+    
+    // 画像リスト取得
+    function getImageList(item) {
+      if (item.image_list) {
+        try {
+          const a = JSON.parse(item.image_list);
+          if (Array.isArray(a) && a.length) return a;
+        } catch {}
+      }
+      const names = [item.detail_filename || ''];
+      for (let i = 0; i < 10; i++) {
+        const k = `image_${String(i).padStart(2,'0')}_filename`;
+        if (item[k]) names.push(item[k]);
+      }
+      return [...new Set(names.filter(n => n))];
+    }
+
+    // カルーセルバインド
+    function bindCarousel(imgEl, item) {
+      const modal = document.getElementById('modal');
+      const modalImg = document.getElementById('modal-image');
+      const prevBtn = document.getElementById('modal-prev');
+      const nextBtn = document.getElementById('modal-next');
+      const closeBtn = document.getElementById('modal-close');
+      let list = [], idx = 0;
+
+      function show(i) {
+        idx = (i + list.length) % list.length;
+        modalImg.src = list[idx];
+      }
+
+      imgEl.addEventListener('click', () => {
+        list = getImageList(item);
+        idx = 0;
+        show(0);
+        // 画像が複数ある場合のみ矢印を表示
+        if (list.length > 1) {
+          prevBtn.style.display = 'flex';
+          nextBtn.style.display = 'flex';
+        } else {
+          prevBtn.style.display = 'none';
+          nextBtn.style.display = 'none';
+        }
+        modal.style.display = 'flex';
+        prevBtn.onclick = () => show(idx - 1);
+        nextBtn.onclick = () => show(idx + 1);
+      });
+
+      closeBtn.onclick = () => { modal.style.display = 'none'; };
+      modal.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
+    }
+
     // ---------------- render gallery ----------------
     function renderGallery() {
         // ----- 0. 画面をクリア -----
@@ -407,6 +510,16 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
     return yB - yA;
   });
 
+  // ① まず SVG の文字列を定義
+const multiIconSvg = `
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <!-- 手前の枠 -->
+    <rect x="6" y="4" width="14" height="12" rx="2" ry="2"/>
+    <!-- 奥の枠（少しずらして下に） -->
+    <rect x="2" y="8" width="14" height="12" rx="2" ry="2"/>
+  </svg>
+`;
+
   // ----- 4. 描画 -----
   sorted.slice(0, limit).forEach(item => {
         const title = localize(item['dc:title']);
@@ -416,12 +529,25 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
         const creator = localize(item['dc:creator']);
         const desc = localize(item['dc:description']);
         const thumb = item['thumbnail_url'] || item['thumbnail_filename'];
+        const imageList = getImageList(item);
+        const hasMultiple = imageList.length > 1;
+        // ② サムネイルHTMLを生成（hasMultipleならアイコンを追加）
+        const thumbHtml = thumb
+          ? `
+          <div class="thumb-wrapper">
+            <img src="${thumb}" alt="${title}" loading="lazy" />
+            ${hasMultiple
+              ? `<span class="multi-icon">${multiIconSvg}</span>`
+              : ``}
+          </div>`
+          : '';
+
         const detail= item['detail_url']    || item['detail_filename'] || thumb;
 
         const card = document.createElement('div');
         card.className = 'artwork';
         card.innerHTML = `
-          ${thumb ? `<img src="${thumb}" alt="${title}" loading="lazy" />` : ''}
+          ${thumbHtml}
           <div class="artwork-content">
             <h2>${title}</h2>
             ${creator ? `<p class="creator-line"><strong>${tLabels.creator}:</strong> ${creator}</p>` : ''}
@@ -434,13 +560,8 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
               : ''}
           </div>`;
 
-        const imgTag = card.querySelector('img');
-        if(imgTag){
-          imgTag.addEventListener('click',()=>{
-            document.getElementById('modal-image').src = detail;
-            document.getElementById('modal').style.display = 'flex';
-          });
-        }
+        const imgEl = card.querySelector('img');
+        bindCarousel(imgEl, item);
         gallery.appendChild(card);
       });
     }
