@@ -26,7 +26,7 @@
        display: block;/* 余白をなくす */
      }
     /* =============  Basic layout & look  ============= */
-    .page-wrap { padding: 20px; }
+    .page-wrap { padding: 8px 20px 20px; }
     body {
       font-family: "Arial", sans-serif;
       background: linear-gradient(45deg, #f7f7f7, #ffffff);
@@ -37,7 +37,20 @@
     h1 {
       text-align: center;
       color: #333;
-      margin-bottom: 18px;
+      margin: 6px 0 12px; /* ← 上6px / 下12px に調整 */
+    }
+
+        /* 基本（PC/タブレット共通：.page-wrap 左右20px） */
+    .tabs { margin-left: -20px; margin-right: -20px; }  /* ← 追加 */
+
+    /* スマホ（幅 < 600px：左右10px） */
+    @media (max-width: 599px) {
+      .tabs { margin-left: -10px; margin-right: -10px; } /* ← 追加 */
+    }
+
+    /* 大きめPC（1200px以上：左右40px） */
+    @media (min-width: 1200px) {
+      .tabs { margin-left: -40px; margin-right: -40px; } /* ← 追加 */
     }
 
     /* -------- control panel -------- */
@@ -190,7 +203,7 @@
 @media (min-width: 1200px) {
 
   /* 余白とカードの見栄えを少しリッチに */
-  .page-wrap        { padding: 40px; }
+  .page-wrap { padding: 8px 40px 40px; } /* ← 上だけ8pxに */
   .gallery          { gap: 26px; }
   .artwork img      { height: 250px; }
 
@@ -227,8 +240,28 @@
 /* フッターの高さぶん余白を確保（本文が隠れないように） */
 body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
 
+/* ===== Tabs (Works / Merchandise) ===== */
+.tabs{
+  display:flex; /* 既存 */
+  gap:8px;
+  margin:10px 0 14px;
+}
+.tabs button{
+  padding:8px 14px;
+  border-radius:999px;
+  border:1px solid #ddd;
+  background:#fff;
+  cursor:pointer;
+  font-size:14px;
+  flex: 1 1 0%;        /* ← 追加：均等幅で横いっぱい */
+  text-align: center;  /* ← 追加：ラベル中央寄せ（念のため） */
+}
+.tabs button.active{
+  background:#333; color:#fff; border-color:#333;
+}
 
-  </style>
+
+ </style>
 </head>
 <body>
 <header>
@@ -242,6 +275,11 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
 
 <main class="page-wrap">
   <h1 id="pageTitle">MAYAMAXX Online Gallery</h1>
+
+  <nav class="tabs" aria-label="Section tabs">
+    <button id="tabWorks" class="active">Works</button>
+    <button id="tabMerch">Merchandise / Publications</button>
+  </nav>
 
   <!-- ▼ filter / search UI -->
   <div class="controls">
@@ -331,8 +369,62 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
       }
     };
 
+  // merch のとき、言語に関係なく Category / Type を英語固定で表示
+  function labelText(key){
+    if (currentDataset === 'merch') {
+      if (key === 'category') return 'Category';
+      if (key === 'type' || key === 'technique') return 'Type';
+    }
+    // works のときは通常の翻訳
+    return tr[currentLang][key];
+  }
+
     let artworks = [];
     let currentLang = 'ja';
+
+        // ---------- dataset switcher ----------
+    let currentDataset = 'works';
+    const DATASETS = {
+      works: 'metadata-mayamaxx.json',       // 作品
+      merch: 'metadata-merchandise.json'      // グッズ・出版物
+    };
+
+    async function loadDataset(which){
+      currentDataset = which;
+
+      // merch のときだけ Type フィルタを表示
+      toggleTypeFilter(which);
+      document.getElementById('subjectFilter').value = '';
+      document.getElementById('typeFilter').value    = '';
+      document.getElementById('yearFilter').value    = '';
+      document.getElementById('searchInput').value   = '';
+
+      const file = DATASETS[which];
+
+      const gallery = document.getElementById('gallery');
+      gallery.textContent = (currentLang==='ja' ? '読み込み中...' : 'Loading...');
+
+      try{
+        const json = await fetch(file).then(r=>r.json());
+        artworks = json.rows || json;
+
+        // 切替時はフィルタと検索を初期化
+        document.getElementById('subjectFilter').value = '';
+        document.getElementById('typeFilter').value    = '';
+        document.getElementById('yearFilter').value    = '';
+        document.getElementById('searchInput').value   = '';
+
+        populateFilters();
+        renderGallery();
+      }catch(e){
+        gallery.textContent = (currentLang==='ja' ? 'JSON 読み込み失敗: ' : 'Failed to load JSON: ') + e;
+      }
+    }
+
+    function setActiveTab(which){
+      document.getElementById('tabWorks').classList.toggle('active', which==='works');
+      document.getElementById('tabMerch').classList.toggle('active', which==='merch');
+    }
 
     // ---------------- helper: robust localized field ----------------
     function localize(raw) {
@@ -361,8 +453,8 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
       document.getElementById('pageTitle').textContent = t.pageTitle;
       // labels
       document.getElementById('langLabel').childNodes[0].nodeValue = t.language + ': ';
-      document.getElementById('subjectLabel').childNodes[0].nodeValue = t.category + ': ';
-      document.getElementById('typeLabel').childNodes[0].nodeValue = t.type + ': ';
+      document.getElementById('subjectLabel').childNodes[0].nodeValue = labelText('category') + ': ';
+      document.getElementById('typeLabel').childNodes[0].nodeValue    = labelText('type') + ': ';
       document.getElementById('yearLabel').childNodes[0].nodeValue = t.year + ': ';
       document.getElementById('searchLabel').childNodes[0].nodeValue = t.search + ': ';
       document.getElementById('limitLabel').childNodes[0].nodeValue = t.limit + ': ';
@@ -411,7 +503,22 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
       fill('yearFilter',yearSet);
     }
 
-    
+    function toggleTypeFilter(which){
+      const lbl = document.getElementById('typeLabel');
+      const sel = document.getElementById('typeFilter');
+      if (!lbl || !sel) return;
+
+      if (which === 'merch') {
+        // merch はスマホでも必ず表示（CSSの display:none を上書き）
+        lbl.style.display = 'flex';
+        sel.style.display = '';
+      } else {
+        // works は CSS に委ねる（スマホは @media で非表示、PCでは表示）
+        lbl.style.display = '';
+        sel.style.display = '';
+      }
+    }
+
     // 画像リスト取得
     function getImageList(item) {
       if (item.image_list) {
@@ -463,6 +570,26 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
       modal.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
     }
 
+    // タブクリック
+    document.getElementById('tabWorks').addEventListener('click', () => {
+      setActiveTab('works');
+      loadDataset('works');
+      location.hash = '#works';
+    });
+    document.getElementById('tabMerch').addEventListener('click', () => {
+      setActiveTab('merch');
+      loadDataset('merch');
+      location.hash = '#merch';
+    });
+
+    // 初期表示（ハッシュで直リンク可能）
+    window.addEventListener('DOMContentLoaded', () => {
+      translateUI();
+      const which = (location.hash === '#merch') ? 'merch' : 'works';
+      setActiveTab(which);
+      loadDataset(which);
+    });
+
     // ---------------- render gallery ----------------
     function renderGallery() {
         // ----- 0. 画面をクリア -----
@@ -471,7 +598,7 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
 
   // ----- 1. フィルタ条件・UI 値を取得 -----
   const fltSubject = document.getElementById('subjectFilter').value;
-  const fltType    = document.getElementById('typeFilter').value;
+  const fltType = document.getElementById('typeFilter').value;
   const fltYear    = document.getElementById('yearFilter').value;
   const keyword    = document.getElementById('searchInput').value.trim().toLowerCase();
   const limit      = Number(document.getElementById('limit').value);
@@ -542,8 +669,10 @@ const multiIconSvg = `
           </div>`
           : '';
 
-        const detail= item['detail_url']    || item['detail_filename'] || thumb;
+        const lblCategory = labelText('category');
+        const lblType     = labelText('technique'); // merch のときも "Type"
 
+        const detail= item['detail_url']    || item['detail_filename'] || thumb;
         const card = document.createElement('div');
         card.className = 'artwork';
         card.innerHTML = `
@@ -552,8 +681,8 @@ const multiIconSvg = `
             <h2>${title}</h2>
             ${creator ? `<p class="creator-line"><strong>${tLabels.creator}:</strong> ${creator}</p>` : ''}
             ${year    ? `<p><strong>${tLabels.date}:</strong> ${year}</p>` : ''}
-            ${subj    ? `<p><strong>${tLabels.category}:</strong> ${subj}</p>` : ''}
-            ${typ     ? `<p><strong>${tLabels.technique}:</strong> ${typ}</p>` : ''}
+            ${subj ? `<p><strong>${lblCategory}:</strong> ${subj}</p>` : ''}
+            ${typ  ? `<p><strong>${lblType}:</strong> ${typ}</p>`     : ''}
             ${desc    ? `<p>${desc}</p>` : ''}
             ${localize(item['dc:source']) ? `<p>${localize(item['dc:source'])}</p>` : ''}
             ${localize(item['vra:location']) ? `<p>${localize(item['vra:location'])}</p>` 
@@ -586,18 +715,6 @@ const multiIconSvg = `
     });
     document.getElementById('searchInput').addEventListener('input',renderGallery);
 
-    // ---------------- load initial data ----------------
-    fetch('metadata-mayamaxx.json')
-      .then(res=>res.json())
-      .then(json=>{
-        artworks = json.rows || json;
-        translateUI();
-        populateFilters();
-        renderGallery();
-      })
-      .catch(err=>{
-        document.getElementById('gallery').textContent = 'JSON 読み込み失敗: '+err;
-      });
   </script>
  </main>
 <footer id="siteFooter" class="site-footer">
