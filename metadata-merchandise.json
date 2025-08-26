@@ -3862,7 +3862,7 @@
       "image_list": "[\"MAYAMAXX_PiPicassoCD0001_goods_1997_001_detail.jpg\", \"MAYAMAXX_PiPicassoCD0001_goods_1997_002_detail.jpg\"]"
     },
     {
-      "dc:identifier": "PortanGrass0001",
+      "dc:identifier": "PortanMugCup0001",
       "dc:creator": "MAYA MAXX",
       "dc:date": "2010s",
       "dc:format": "JPG",
@@ -3872,9 +3872,9 @@
       "dc:coverage": "Japan,2010s",
       "schema:license": "Copyright© MAYA MAXX , 2025 All Rights Reserved.",
       "schema:isPartOf": null,
-      "thumbnail_filename": "MAYAMAXX_PortanGrass0001_Goods_2010s_001_thumb.jpg",
+      "thumbnail_filename": "MAYAMAXX_PortanMugCup0001_Goods_2010s_001_thumb.jpg",
       "thumbnail_url": null,
-      "detail_filename": "MAYAMAXX_PortanGrass0001_Goods_2010s_001_detail.jpg",
+      "detail_filename": "MAYAMAXX_PortanMugCup0001_Goods_2010s_001_detail.jpg",
       "detail_url": null,
       "vra:inscription_ja": null,
       "vra:inscription_en": null,
@@ -3886,7 +3886,7 @@
       "dc:type": "{\"ja\": \"生活雑貨\", \"en\": \"Household Goods\"}",
       "dc:source": "{\"ja\": null, \"en\": null}",
       "vra:location": "{\"ja\": null, \"en\": null}",
-      "image_list": "[\"MAYAMAXX_PortanGrass0001_Goods_2010s_001_detail.jpg\"]"
+      "image_list": "[\"MAYAMAXX_PortanMugCup0001_Goods_2010s_001_detail.jpg\"]"
     },
     {
       "dc:identifier": "BinzoPouch0003",
