@@ -3914,6 +3914,33 @@
       "dc:source": "{\"ja\": null, \"en\": null}",
       "vra:location": "{\"ja\": null, \"en\": null}",
       "image_list": "[\"MAYAMAXX_BinzoPouch0003_Goods_2005_001_detail.jpg\"]"
+    },
+    {
+      "dc:identifier": "EightyJohn2000Calendar0001",
+      "dc:creator": "MAYA MAXX",
+      "dc:date": "2000",
+      "dc:format": "JPG",
+      "dc:language": "ja",
+      "dc:rights": "© MAYAMAXX. All rights reserved. For more information, visit https://mayamaxx.jp/",
+      "dc:relation": "Official website: https://mayamaxx.jp/",
+      "dc:coverage": "Japan,2000",
+      "schema:license": "Copyright© MAYA MAXX , 2025 All Rights Reserved.",
+      "schema:isPartOf": null,
+      "thumbnail_filename": "MAYAMAXX_EightyJohn2000Calendar0001_Goods_2000_001_thumb.jpg",
+      "thumbnail_url": null,
+      "detail_filename": "MAYAMAXX_EightyJohn2000Calendar0001_Goods_2000_001_detail.jpg",
+      "detail_url": null,
+      "vra:inscription_ja": null,
+      "vra:inscription_en": null,
+      "vra:exhibitionHistory_ja": null,
+      "vra:exhibitionHistory_en": null,
+      "dc:title": "{\"ja\": \"Eighty John 2000 カレンダー\", \"en\": \"Eighty John 2000 Calendar\"}",
+      "dc:description": "{\"ja\": \"TOKYO FM 30周年を機に誕生したマスコットのカレンダー\", \"en\": \"A calendar featuring the mascot created to commemorate TOKYO FM's 30th anniversary.\"}",
+      "dc:subject": "{\"ja\": null, \"en\": \"Eighty John\"}",
+      "dc:type": "{\"ja\": \"印刷物\", \"en\": \"Printed Materials\"}",
+      "dc:source": "{\"ja\": null, \"en\": null}",
+      "vra:location": "{\"ja\": null, \"en\": null}",
+      "image_list": "[\"MAYAMAXX_EightyJohn2000Calendar0001_Goods_2000_001_detail.jpg\", \"MAYAMAXX_EightyJohn2000Calendar0001_Goods_2000_002_detail.jpg\", \"MAYAMAXX_EightyJohn2000Calendar0001_Goods_2000_003_detail.jpg\", \"MAYAMAXX_EightyJohn2000Calendar0001_Goods_2000_004_detail.jpg\"]"
     }
   ]
 }
