@@ -8072,6 +8072,33 @@
       "dc:source": "{\"ja\": null, \"en\": null}",
       "vra:location": "{\"ja\": null, \"en\": null}",
       "image_list": "[\"MAYAMAXX_MySonsLips0002_books_1999_001_detail.jpg\", \"MAYAMAXX_MySonsLips0002_books_1999_002_detail.jpg\"]"
+    },
+    {
+      "dc:identifier": "BrainTrainWhatItTakes0001",
+      "dc:creator": "MAYA MAXX",
+      "dc:date": "2000",
+      "dc:format": "JPG",
+      "dc:language": "ja",
+      "dc:rights": "© MAYAMAXX. All rights reserved. For more information, visit https://mayamaxx.jp/",
+      "dc:relation": "Official website: https://mayamaxx.jp/",
+      "dc:coverage": "Japan,2000",
+      "schema:license": "Copyright© MAYA MAXX , 2025 All Rights Reserved.",
+      "schema:isPartOf": null,
+      "thumbnail_filename": "MAYAMAXX_BrainTrainWhatItTakes0001_goods_2000_001_thumb.jpg",
+      "thumbnail_url": null,
+      "detail_filename": "MAYAMAXX_BrainTrainWhatItTakes0001_goods_2000_001_detail.jpg",
+      "detail_url": null,
+      "vra:inscription_ja": null,
+      "vra:inscription_en": null,
+      "vra:exhibitionHistory_ja": null,
+      "vra:exhibitionHistory_en": null,
+      "dc:title": "{\"ja\": \"RAIN BRAIN / What It Takes LP\", \"en\": \"RAIN BRAIN / What It Takes LP\"}",
+      "dc:description": "{\"ja\": \"Groove Kitchen\", \"en\": \"Groove Kitchen\"}",
+      "dc:subject": "{\"ja\": \"DJ Force & Morpheus,Choclair\", \"en\": \"DJ Force & Morpheus,Choclair\"}",
+      "dc:type": "{\"ja\": \"カバーアート(CD・DVD・LP)\", \"en\": \"Cover art (CD, DVD, LP)\"}",
+      "dc:source": "{\"ja\": null, \"en\": null}",
+      "vra:location": "{\"ja\": null, \"en\": null}",
+      "image_list": "[\"MAYAMAXX_BrainTrainWhatItTakes0001_goods_2000_001_detail.jpg\"]"
     }
   ]
 }
