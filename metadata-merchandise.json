@@ -8045,6 +8045,33 @@
       "dc:source": "{\"ja\": null, \"en\": null}",
       "vra:location": "{\"ja\": null, \"en\": null}",
       "image_list": "[\"MAYAMAXX_Zoo0001_books_2011_001_detail.jpg\"]"
+    },
+    {
+      "dc:identifier": "MySonsLips0002",
+      "dc:creator": "MAYA MAXX",
+      "dc:date": "1999",
+      "dc:format": "JPG",
+      "dc:language": "ja",
+      "dc:rights": "© MAYAMAXX. All rights reserved. For more information, visit https://mayamaxx.jp/",
+      "dc:relation": "Official website: https://mayamaxx.jp/",
+      "dc:coverage": "Japan,1999",
+      "schema:license": "Copyright© MAYA MAXX , 2025 All Rights Reserved.",
+      "schema:isPartOf": null,
+      "thumbnail_filename": "MAYAMAXX_MySonsLips0002_books_1999_001_thumb.jpg",
+      "thumbnail_url": null,
+      "detail_filename": "MAYAMAXX_MySonsLips0002_books_1999_001_detail.jpg",
+      "detail_url": null,
+      "vra:inscription_ja": null,
+      "vra:inscription_en": null,
+      "vra:exhibitionHistory_ja": null,
+      "vra:exhibitionHistory_en": null,
+      "dc:title": "{\"ja\": \"息子の唇\", \"en\": \"My Son's Lips\"}",
+      "dc:description": "{\"ja\": \"集英社\", \"en\": \"Shueisha Inc.\"}",
+      "dc:subject": "{\"ja\": \"内田 春菊\", \"en\": \"Shungiku Uchida\"}",
+      "dc:type": "{\"ja\": \"カバーアート(書籍)\", \"en\": \"Cover art (Books)\"}",
+      "dc:source": "{\"ja\": null, \"en\": null}",
+      "vra:location": "{\"ja\": null, \"en\": null}",
+      "image_list": "[\"MAYAMAXX_MySonsLips0002_books_1999_001_detail.jpg\", \"MAYAMAXX_MySonsLips0002_books_1999_002_detail.jpg\"]"
     }
   ]
 }
