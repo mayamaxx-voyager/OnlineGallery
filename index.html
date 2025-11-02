@@ -557,9 +557,11 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
         if (list.length > 1) {
           prevBtn.style.display = 'flex';
           nextBtn.style.display = 'flex';
+          modal.dataset.multi = '1';
         } else {
           prevBtn.style.display = 'none';
           nextBtn.style.display = 'none';
+          modal.dataset.multi = '0';
         }
         modal.style.display = 'flex';
         prevBtn.onclick = () => show(idx - 1);
@@ -568,6 +570,69 @@ body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
 
       closeBtn.onclick = () => { modal.style.display = 'none'; };
       modal.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
+
+      // モーダル画像のスワイプ操作（スマホ/タブレット）
+      if (!window.__modalSwipeBound) {
+        window.__modalSwipeBound = true;
+        let startX = 0, startY = 0, tracking = false;
+        const SWIPE_THRESHOLD = 40;   // 左右移動の最小ピクセル量
+        const VERTICAL_TOL = 80;      // 縦ズレの許容量
+
+        const onTouchStart = (ev) => {
+          if (!ev.touches || ev.touches.length !== 1) return;
+          const t = ev.touches[0];
+          startX = t.clientX;
+          startY = t.clientY;
+          tracking = true;
+        };
+
+        const onTouchMove = (ev) => {
+          if (!tracking) return;
+          if (!ev.touches || ev.touches.length !== 1) return;
+          const t = ev.touches[0];
+          const dx = t.clientX - startX;
+          const dy = t.clientY - startY;
+          // 横方向が明らかに強いときはスクロールを抑止
+          if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
+            ev.preventDefault();
+          }
+        };
+
+        const onTouchEnd = (ev) => {
+          if (!tracking) return;
+          tracking = false;
+          // マルチ画像のときのみスワイプを有効化
+          const isMulti = document.getElementById('modal')?.dataset?.multi === '1';
+          if (!isMulti) return;
+
+          let endX, endY;
+          if (ev.changedTouches && ev.changedTouches.length) {
+            endX = ev.changedTouches[0].clientX;
+            endY = ev.changedTouches[0].clientY;
+          } else {
+            return;
+          }
+          const dx = endX - startX;
+          const dy = endY - startY;
+          if (Math.abs(dy) > VERTICAL_TOL) return; // 縦スワイプは無視
+          if (Math.abs(dx) < SWIPE_THRESHOLD) return; // 小さすぎる動きは無視
+
+          // 左へスワイプ -> 次、右へスワイプ -> 前
+          const prev = document.getElementById('modal-prev');
+          const next = document.getElementById('modal-next');
+          if (dx < 0) {
+            if (next && typeof next.onclick === 'function') next.onclick();
+          } else {
+            if (prev && typeof prev.onclick === 'function') prev.onclick();
+          }
+        };
+
+        // move は passive: false で preventDefault を許可
+        const modalImgEl = document.getElementById('modal-image');
+        modalImgEl.addEventListener('touchstart', onTouchStart, { passive: true });
+        modalImgEl.addEventListener('touchmove',  onTouchMove,  { passive: false });
+        modalImgEl.addEventListener('touchend',   onTouchEnd,   { passive: true });
+      }
     }
 
     // タブクリック
