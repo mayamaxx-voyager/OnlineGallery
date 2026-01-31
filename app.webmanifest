@@ -1,6 +1,6 @@
 {
   "name": "MAYAMAXX Online Gallery",
-  "short_name": "MAYAMAXX",
+  "short_name": "MAYAMAXX Works",
   "start_url": "/OnlineGallery/",
   "scope": "/OnlineGallery/",
   "display": "standalone",
