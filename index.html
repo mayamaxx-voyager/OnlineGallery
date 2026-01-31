@@ -9,10 +9,20 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- iOS ホーム画面 -->
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="manifest" href="/OnlineGallery/app.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- iOS向け：ホーム画面アイコン -->
+  <link rel="apple-touch-icon" href="/OnlineGallery/apple-touch-icon.png">
+
+  <!-- （互換目的）古いiOS向けの standalone 指定 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
   <title>MAYAMAXX Online Gallery</title>
   <style>
     /* --- header image --- */
@@ -781,6 +791,13 @@ const multiIconSvg = `
     document.getElementById('searchInput').addEventListener('input',renderGallery);
 
   </script>
+  <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/OnlineGallery/sw.js", { scope: "/OnlineGallery/" });
+    });
+  }
+</script>
  </main>
 <footer id="siteFooter" class="site-footer">
   <!-- 日本語用 -->

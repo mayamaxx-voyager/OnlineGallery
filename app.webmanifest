@@ -1,0 +1,13 @@
+{
+  "name": "MAYAMAXX Online Gallery",
+  "short_name": "MAYAMAXX",
+  "start_url": "/OnlineGallery/",
+  "scope": "/OnlineGallery/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "/OnlineGallery/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/OnlineGallery/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
