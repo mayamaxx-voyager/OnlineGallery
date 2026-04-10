@@ -288,6 +288,38 @@
     }
     .slideshow-nav.prev { left: 10px; }
     .slideshow-nav.next { right: 10px; }
+    @media (min-width: 1280px) {
+      .gallery.gallery-slideshow .slideshow-stage {
+        overflow: visible;
+      }
+      .gallery.gallery-slideshow .slideshow-nav.prev {
+        left: -56px;
+      }
+      .gallery.gallery-slideshow .slideshow-nav.next {
+        right: -56px;
+      }
+    }
+    @media (min-width: 1850px) {
+      .gallery.gallery-slideshow {
+        padding-bottom: 18px;
+        overflow: visible;
+      }
+      .gallery.gallery-slideshow .slideshow-stage {
+        overflow: visible;
+      }
+      .gallery.gallery-slideshow .slideshow-media {
+        border-radius: 14px;
+      }
+      .gallery.gallery-slideshow .slideshow-caption {
+        left: auto;
+        right: calc(100% + 16px);
+        top: auto;
+        bottom: 0;
+        transform: none;
+        width: clamp(204px, 18vw, 312px);
+        max-width: none;
+      }
+    }
     .jungle-gym {
       position: absolute;
       inset: 0;
