@@ -126,20 +126,46 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      margin: 10px 0 0;
-      font-size: 13px;
+      gap: 10px;
+      margin: 10px 0 14px;
+      font-size: 12px;
+      letter-spacing: 0.06em;
     }
     .pager button {
-      padding: 6px 10px;
+      min-width: 88px;
+      padding: 9px 14px;
       border-radius: 999px;
-      border: 1px solid #ccc;
+      border: 1px solid var(--ui-line);
       background: #fff;
+      color: var(--ui-ink);
       cursor: pointer;
+      font-size: 12px;
+      line-height: 1;
+      transition: border-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease, transform 0.12s ease;
+    }
+    .pager button:hover:not(:disabled) {
+      border-color: var(--ui-line-strong);
+      box-shadow: 0 6px 14px rgba(18, 24, 35, 0.12);
+    }
+    .pager button:active:not(:disabled) {
+      transform: translateY(1px);
     }
     .pager button:disabled {
-      opacity: 0.45;
+      opacity: 0.35;
       cursor: default;
+      box-shadow: none;
+    }
+    #pageInfo {
+      min-width: 112px;
+      text-align: center;
+      color: var(--ui-subtle-ink);
+      border: 1.5px solid #c4ccd8;
+      border-radius: 999px;
+      background: #fff;
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
     }
 
     
@@ -211,6 +237,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      background: #0b0d12;
       opacity: 0;
       transition: opacity 1s ease;
     }
@@ -226,12 +253,17 @@
     }
     .slideshow-caption {
       position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 12px 16px;
+      left: 12px;
+      right: auto;
+      bottom: 12px;
+      z-index: 4;
+      width: fit-content;
+      max-width: min(72%, 560px);
+      padding: 8px 10px;
       color: #fff;
-      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.72) 40%);
+      background: linear-gradient(145deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.46) 100%);
+      border-radius: 8px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
       font-size: 13px;
       line-height: 1.35;
     }
@@ -492,6 +524,9 @@
   .controls         { grid-template-columns: 1fr 1fr; gap: 8px 12px; padding: 12px 10px; }
   .controls label   { font-size: 10px; }
   #searchLabel      { grid-column: 1 / -1; }
+  .pager            { gap: 8px; margin: 8px 0 12px; flex-wrap: wrap; }
+  .pager button     { min-width: 80px; padding: 8px 12px; }
+  #pageInfo         { min-width: 100px; font-size: 11px; font-weight: 600; }
 
   
   .gallery          { height: clamp(420px, 68vh, 760px); }
@@ -1053,6 +1088,9 @@ body{ padding-bottom:40px; }
       }
       return [...new Set(names.filter(n => n))];
     }
+    function getSlideshowPrimaryImage(item) {
+      return item['detail_url'] || item['detail_filename'] || item['thumbnail_url'] || item['thumbnail_filename'] || '';
+    }
     function bindCarousel(imgEl, item) {
       const modal = document.getElementById('modal');
       const modalImg = document.getElementById('modal-image');
@@ -1247,7 +1285,7 @@ body{ padding-bottom:40px; }
       `;
 
       if (currentViewMode === 'slideshow') {
-        const validItems = shown.filter(item => (item['thumbnail_url'] || item['thumbnail_filename']));
+        const validItems = shown.filter(item => !!getSlideshowPrimaryImage(item));
         if (!validItems.length) {
           gallery.textContent = currentLang === 'ja' ? '該当する作品がありません。' : 'No artworks found.';
           return;
@@ -1278,15 +1316,17 @@ body{ padding-bottom:40px; }
           const subj = localize(item['dc:subject']);
           const typ = localize(item['dc:type']);
           const desc = localize(item['dc:description']);
-          const thumb = item['thumbnail_url'] || item['thumbnail_filename'];
+          const slideImage = getSlideshowPrimaryImage(item);
           const imageList = getImageList(item);
           const hasMultiple = imageList.length > 1;
 
+          Array.from(media.querySelectorAll('.slideshow-layer:not(.is-active)')).forEach(layer => layer.remove());
           const oldLayer = media.querySelector('.slideshow-layer.is-active');
           const newLayer = document.createElement('div');
           newLayer.className = 'slideshow-layer';
+          newLayer.style.zIndex = '1';
           newLayer.innerHTML = `
-            <img src="${thumb}" alt="${title}" loading="lazy" title="${title}" />
+            <img src="${slideImage}" alt="${title}" loading="lazy" title="${title}" />
             ${hasMultiple ? `<span class="multi-icon">${multiIconSvg}</span>` : ''}
           `;
           media.appendChild(newLayer);
@@ -1300,8 +1340,13 @@ body{ padding-bottom:40px; }
             void newLayer.offsetWidth;
             newLayer.classList.add('is-active');
             if (oldLayer) {
+              oldLayer.style.zIndex = '0';
               oldLayer.classList.remove('is-active');
-              setTimeout(() => oldLayer.remove(), 1030);
+              const cleanupOld = () => {
+                if (oldLayer && oldLayer.parentNode) oldLayer.remove();
+              };
+              oldLayer.addEventListener('transitionend', cleanupOld, { once: true });
+              setTimeout(cleanupOld, 1120);
             }
           };
           if (newImg && newImg.complete) {
