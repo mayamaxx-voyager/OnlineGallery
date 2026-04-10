@@ -1,4 +1,4 @@
-const CACHE_NAME = "mayamaxx-onlinegallery-v1";
+const CACHE_NAME = "mayamaxx-onlinegallery-v2";
 const PRECACHE_URLS = [
   "/OnlineGallery/",
   "/OnlineGallery/index.html",
