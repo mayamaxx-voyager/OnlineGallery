@@ -1344,10 +1344,13 @@ body{ padding-bottom:40px; }
         const drawSlide = () => {
           const item = validItems[slideshowIndex];
           const title = localize(item['dc:title']) || '';
+          const creator = localize(item['dc:creator']);
           const year = localize(item['dc:date']);
           const subj = localize(item['dc:subject']);
           const typ = localize(item['dc:type']);
           const desc = localize(item['dc:description']);
+          const source = localize(item['dc:source']);
+          const location = localize(item['vra:location']);
           const slideImage = getSlideshowPrimaryImage(item);
           const imageList = getImageList(item);
           const hasMultiple = imageList.length > 1;
@@ -1394,10 +1397,13 @@ body{ padding-bottom:40px; }
 
           caption.innerHTML = `
             <h2>${title}</h2>
+            ${creator ? `<p class="creator-line"><strong>${tLabels.creator}:</strong> ${creator}</p>` : ''}
             ${year ? `<p><strong>${tLabels.date}:</strong> ${year}</p>` : ''}
             ${subj ? `<p><strong>${lblCategory}:</strong> ${subj}</p>` : ''}
             ${typ ? `<p><strong>${lblType}:</strong> ${typ}</p>` : ''}
             ${desc ? `<p>${desc}</p>` : ''}
+            ${source ? `<p>${source}</p>` : ''}
+            ${location ? `<p>${location}</p>` : ''}
           `;
           bindCarousel(newLayer.querySelector('img'), item);
         };
