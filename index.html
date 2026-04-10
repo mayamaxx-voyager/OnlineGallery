@@ -1221,21 +1221,26 @@ body{ padding-bottom:40px; }
           `;
           media.appendChild(newLayer);
           const newImg = newLayer.querySelector('img');
+          let fadeStarted = false;
           const startCrossFade = () => {
+            if (fadeStarted) return;
+            fadeStarted = true;
             if (!media.contains(newLayer)) return;
-            requestAnimationFrame(() => {
-              newLayer.classList.add('is-active');
-              if (oldLayer) {
-                oldLayer.classList.remove('is-active');
-                setTimeout(() => oldLayer.remove(), 1030);
-              }
-            });
+            // Force style flush so opacity transition always triggers, including after resize.
+            void newLayer.offsetWidth;
+            newLayer.classList.add('is-active');
+            if (oldLayer) {
+              oldLayer.classList.remove('is-active');
+              setTimeout(() => oldLayer.remove(), 1030);
+            }
           };
           if (newImg && newImg.complete) {
             startCrossFade();
           } else if (newImg) {
             newImg.addEventListener('load', startCrossFade, { once: true });
             newImg.addEventListener('error', startCrossFade, { once: true });
+            // Safety net: if load event timing is odd after resize, still fade in.
+            setTimeout(startCrossFade, 220);
           } else {
             startCrossFade();
           }
