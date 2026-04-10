@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  
+  <!-- 最小構成（旧ブラウザ用） -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  
+  <!-- 推奨構成（モダン + 旧ブラウザ両対応） -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  
+  <!-- iOS ホーム画面 -->
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,26 +16,26 @@
   <link rel="manifest" href="/OnlineGallery/app.webmanifest">
   <meta name="theme-color" content="#ffffff">
 
-  
+  <!-- iOS向け：ホーム画面アイコン -->
   <link rel="apple-touch-icon" href="/OnlineGallery/apple-touch-icon.png">
 
-  
+  <!-- （互換目的）古いiOS向けの standalone 指定 -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
   <title>MAYAMAXX Online Gallery</title>
   <style>
-    
+    /* --- header image --- */
       header {
       width: 100%;
      }
 
      header .header-image {
-       width: 100%;   
-       height: auto;  
-       display: block;
+       width: 100%;   /* 横幅いっぱいに広げる */
+       height: auto;  /* 縦横比を保つ */
+       display: block;/* 余白をなくす */
      }
-    
+    /* =============  Basic layout & look  ============= */
     .page-wrap { padding: 8px 20px 20px; }
     body {
       font-family: "Arial", sans-serif;
@@ -47,23 +47,23 @@
     h1 {
       text-align: center;
       color: #333;
-      margin: 6px 0 12px; 
+      margin: 6px 0 12px; /* ← 上6px / 下12px に調整 */
     }
 
-        
-    .tabs { margin-left: -20px; margin-right: -20px; }  
+        /* 基本（PC/タブレット共通：.page-wrap 左右20px） */
+    .tabs { margin-left: -20px; margin-right: -20px; }  /* ← 追加 */
 
-    
+    /* スマホ（幅 < 600px：左右10px） */
     @media (max-width: 599px) {
-      .tabs { margin-left: -10px; margin-right: -10px; } 
+      .tabs { margin-left: -10px; margin-right: -10px; } /* ← 追加 */
     }
 
-    
+    /* 大きめPC（1200px以上：左右40px） */
     @media (min-width: 1200px) {
-      .tabs { margin-left: -40px; margin-right: -40px; } 
+      .tabs { margin-left: -40px; margin-right: -40px; } /* ← 追加 */
     }
 
-    
+    /* -------- control panel -------- */
     .controls {
       display: flex;
       flex-wrap: wrap;
@@ -78,204 +78,29 @@
       padding: 6px;
       font-size: 14px;
     }
-    .pager {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      margin: 10px 0 0;
-      font-size: 13px;
-    }
-    .pager button {
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid #ccc;
-      background: #fff;
-      cursor: pointer;
-    }
-    .pager button:disabled {
-      opacity: 0.45;
-      cursor: default;
-    }
 
-    
+    /* -------- gallery grid -------- */
     .gallery {
-      position: relative;
-      height: clamp(460px, 72vh, 860px);
-      overflow: hidden;
-      border-radius: 18px;
-      perspective: 1100px;
-      transform-style: preserve-3d;
-      background:
-        radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0) 42%),
-        radial-gradient(circle at 84% 82%, rgba(230, 250, 255, 0.55), rgba(230, 250, 255, 0) 40%),
-        linear-gradient(125deg, #e8eef9 0%, #f3f7fb 54%, #ecf4ff 100%);
-      border: 1px solid rgba(60, 70, 90, 0.12);
-    }
-    .gallery.gallery-classic {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 18px;
-      height: auto;
-      min-height: 440px;
-      background: #f4f7fb;
-      padding: 12px;
-      perspective: none;
-      transform-style: flat;
-    }
-    .gallery.gallery-tile {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
-      gap: 3px;
-      height: auto;
-      min-height: 420px;
-      background: #ffffff;
-      padding: 3px;
-      perspective: none;
-      transform-style: flat;
-    }
-    .gallery.gallery-slideshow {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: clamp(460px, 72vh, 860px);
-      min-height: 460px;
-      background: #0f1116;
-      padding: 18px;
-      perspective: none;
-      transform-style: flat;
-    }
-    .slideshow-stage {
-      width: min(92vw, 1040px);
-      height: min(64vh, 720px);
-      background: #0b0d12;
-      border-radius: 14px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .slideshow-media {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 50% 44%, #1b2233 0%, #0b0d12 70%);
-      overflow: hidden;
-    }
-    .slideshow-layer {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 1s ease;
-    }
-    .slideshow-layer.is-active {
-      opacity: 1;
-    }
-    .slideshow-media img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      cursor: pointer;
-      display: block;
-    }
-    .slideshow-caption {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 12px 16px;
-      color: #fff;
-      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.72) 40%);
-      font-size: 13px;
-      line-height: 1.35;
-    }
-    .slideshow-caption h2 {
-      margin: 0 0 4px;
-      font-size: 17px;
-      line-height: 1.25;
-    }
-    .slideshow-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      border: none;
-      background: rgba(0,0,0,0.45);
-      color: #fff;
-      font-size: 20px;
-      cursor: pointer;
-      z-index: 2;
-    }
-    .slideshow-nav.prev { left: 10px; }
-    .slideshow-nav.next { right: 10px; }
-    .jungle-gym {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      transform-style: preserve-3d;
-      display: none;
-    }
-    .jg-ring {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: var(--ring-size, 460px);
-      height: var(--ring-size, 460px);
-      margin-left: calc(var(--ring-size, 460px) * -0.5);
-      margin-top: calc(var(--ring-size, 460px) * -0.5);
-      border-radius: 50%;
-      border: 1px solid rgba(255, 255, 255, 0.65);
-      box-shadow: inset 0 0 18px rgba(180, 205, 255, 0.2), 0 0 10px rgba(120, 150, 210, 0.14);
-      mix-blend-mode: screen;
-      --ring-tilt: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-      --ring-shape: scaleY(1);
-      transform: var(--ring-tilt) var(--ring-shape) rotateZ(0deg);
-      animation: ringRotate var(--ring-speed, 20s) linear infinite;
-      transform-style: preserve-3d;
-    }
-    .jg-ring.r1 { --ring-tilt: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-    .jg-ring.r2 { --ring-speed: 24s; --ring-tilt: rotateX(90deg) rotateY(0deg) rotateZ(0deg); }
-    .jg-ring.r3 { --ring-speed: 20s; --ring-tilt: rotateY(90deg) rotateX(0deg) rotateZ(0deg); }
-    .jg-ring.r4 { --ring-speed: 26s; --ring-tilt: rotateY(42deg) rotateX(0deg) rotateZ(0deg); }
-    .jg-ring.r5 { --ring-speed: 30s; --ring-tilt: rotateX(0deg) rotateY(0deg) rotateZ(0deg); --ring-shape: scaleY(0.62); }
-    .jg-ring.r6 { --ring-speed: 30s; --ring-tilt: rotateX(0deg) rotateY(0deg) rotateZ(0deg); --ring-shape: scaleY(0.32); }
-    .jg-core {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 14px;
-      height: 14px;
-      margin-left: -7px;
-      margin-top: -7px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.86);
-      box-shadow: 0 0 26px rgba(187, 218, 255, 0.65);
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
     }
     .artwork {
-      position: absolute;
-      width: var(--thumb-size, 132px);
-      height: var(--thumb-size, 132px);
-      border-radius: 10px;
+      position: relative;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      user-select: none;
-      transform-origin: center center;
-      will-change: transform;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(0.5px);
-      transform-style: preserve-3d;
+      transition: transform 0.2s ease;
+      text-align: left;
     }
-      
+      /* 複数画像アイコン */
     .multi-icon {
       position: absolute;
       top: 8px;
       right: 8px;
-      width: 16px;
-      height: 16px;
+      width: 24px;
+      height: 24px;
       pointer-events: none;
     }
 
@@ -286,105 +111,26 @@
       stroke: #333;
       stroke-width: 1;
     }
-    .artwork:hover {
-      box-shadow: 0 18px 28px rgba(0, 0, 0, 0.22);
-      z-index: 50;
-    }
+    .artwork:hover { transform: scale(1.02); }
     .artwork img {
       width: 100%;
-      height: 100%;
+      height: 200px;
       object-fit: cover;
       cursor: pointer;
-      transform-origin: 50% 50%;
     }
-    .artwork-content { display: none; }
-    .gallery.gallery-classic .artwork {
-      position: relative;
-      left: auto;
-      top: auto;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      border: none;
-      backdrop-filter: none;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-      transform: none !important;
-      opacity: 1 !important;
-      z-index: auto !important;
-    }
-    .gallery.gallery-tile .artwork {
-      position: relative;
-      left: auto;
-      top: auto;
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      height: auto;
-      border-radius: 0;
-      border: none;
-      box-shadow: none;
-      backdrop-filter: none;
-      transform: none !important;
-      opacity: 1 !important;
-      z-index: auto !important;
-    }
-    .gallery.gallery-tile .artwork img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: none !important;
-    }
-    .gallery.gallery-tile .artwork-content {
-      display: none !important;
-    }
-    .gallery.gallery-classic .artwork img {
-      height: 190px;
-      transform: none !important;
-    }
-    .gallery.gallery-classic .artwork-content {
-      display: block;
-      padding: 10px 15px;
-      background: #fff;
-    }
-    .gallery.gallery-classic .artwork-content h2 {
-      margin: 0 0 6px;
-      font-size: 16px;
-      line-height: 1.3;
-    }
-    .gallery.gallery-classic .artwork-content p {
-      margin: 3px 0;
-      font-size: 13px;
-      color: #444;
-      line-height: 1.35;
-    }
+    .artwork-content { padding: 10px 15px; }
+    .artwork-content h2 { font-size: 16px; margin: 5px 0; }
+    .artwork-content p { margin: 4px 0; font-size: 13px; color: #444; }
 
-    @keyframes ringRotate {
-      from { transform: var(--ring-tilt) var(--ring-shape) rotateZ(0deg); }
-      to { transform: var(--ring-tilt) var(--ring-shape) rotateZ(360deg); }
-    }
-
-    
+    /* -------- simple modal -------- */
     #modal {
       position: fixed;
       inset: 0;
-      display: flex;
+      display: none;
       background: rgba(0, 0, 0, 0.8);
       align-items: center;
       justify-content: center;
       z-index: 1000;
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transition: opacity 0.45s ease, visibility 0.45s ease;
-    }
-    #modal.is-open {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
-    #modal.is-closing {
-      opacity: 0;
-      visibility: visible;
-      pointer-events: none;
     }
     #modal img {
       max-width: 90%;
@@ -404,7 +150,7 @@
     }
     .nav {
       position: absolute;
-      top: 50・・
+      top: 50％;
       transform: translateY(-50%);
 
       box-sizing: border-box;
@@ -412,7 +158,7 @@
       width: 64px;          
       height: 64px;         
 
-      
+      /* padding を残しても、幅・高さ内に収める */
       padding: 6px;        
 
       display: flex;        
@@ -428,57 +174,65 @@
       cursor: pointer;
       user-select: none;
 
-      
+      /* JS で切り替え */
       display: none;
     }
     #modal-prev { left:16px; }
     #modal-next { right:16px; }
    #pageTitle { display: none; }
-   
+   /* 作者行は共通なので表示しない */
    .creator-line { display: none; }
 
+/* ========== ① スマホ向け（幅 600px 未満） ========== */
 @media (max-width: 599px) {
 
-  
+  /* 余白・フォントをやや縮小 */
   .page-wrap        { padding: 10px; }
   body              { font-size: 14px; }
 
-  
+  /* コントロール類を縦一列に並べる */
   .controls         { flex-direction: column; align-items: stretch; gap: 8px; }
   .controls label   { justify-content: space-between; }
 
-  
-  .gallery          { height: clamp(420px, 68vh, 760px); }
+  /* ギャラリーは小さめカードを細かく並べる */
+  .gallery          { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .artwork img      { height: 140px; }   /* カードの縦幅も圧縮 */
 
-  
+  /* モーダル画像は画面いっぱいに近づける */
   #modal img        { max-width: 96%; max-height: 80%; }
 
-  
+  /* ▼ 追加：タイプのプルダウンを隠す */
   #typeLabel { display: none; }
 
 }
 
+/* ========== ② タブレット〜標準 PC（幅 600–1199px） ========== */
+/* 既定値（今の CSS）がちょうど良いので特に調整不要           */
+
+/* ========== ③ 大きめ PC（幅 1200px 以上） ========== */
 @media (min-width: 1200px) {
 
-  
-  .page-wrap { padding: 8px 40px 40px; } 
-  .gallery          { height: clamp(520px, 74vh, 920px); }
+  /* 余白とカードの見栄えを少しリッチに */
+  .page-wrap { padding: 8px 40px 40px; } /* ← 上だけ8pxに */
+  .gallery          { gap: 26px; }
+  .artwork img      { height: 250px; }
 
-  
+  /* 見出しや入力群をわずかに拡大 */
   h1                { font-size: 28px; }
   .controls         { font-size: 15px; }
   .controls select,
   .controls input   { font-size: 15px; }
 }
 
+/* ===== footer (always visible) ===== */
 .site-footer{
   position: fixed;
   bottom: 0; left: 0; width: 100%;
-  
+  /* ① 旧ブラウザ用フォールバック（不透明） */
   background:#333;
-  
-  background:rgba(51,51,51,0.65);   
-  
+  /* ② モダンブラウザ向けに半透明を上書き */
+  background:rgba(51,51,51,0.65);   /* 0.0 = 完全透明, 1.0 = 不透明 */
+  /*  #333333cc  でも同じ効果（cc ≒ 80%） */
   color:#fff;
   text-align:center;
   padding:6px 0;
@@ -486,15 +240,19 @@
   z-index:1000;
 }
 
+/* ▼ 追加：フッタ内の段落を詰める ----------------------- */
 .site-footer p{
-  margin: 0;            
-  line-height: 1.2;    
+  margin: 0;            /* デフォルト上下 1em → 0 に */
+  line-height: 1.2;    /* 行送りを狭く（1.0〜1.2 で調整） */
 }
+/* ------------------------------------------------------ */
 
-body{ padding-bottom:40px; }  
+/* フッターの高さぶん余白を確保（本文が隠れないように） */
+body{ padding-bottom:40px; }  /* 40px ≒ 上記 padding 6px + 行高 */
 
+/* ===== Tabs (Works / Merchandise) ===== */
 .tabs{
-  display:flex; 
+  display:flex; /* 既存 */
   gap:8px;
   margin:10px 0 14px;
 }
@@ -505,21 +263,22 @@ body{ padding-bottom:40px; }
   background:#fff;
   cursor:pointer;
   font-size:14px;
-  flex: 1 1 0%;        
-  text-align: center;  
+  flex: 1 1 0%;        /* ← 追加：均等幅で横いっぱい */
+  text-align: center;  /* ← 追加：ラベル中央寄せ（念のため） */
 }
 .tabs button.active{
   background:#333; color:#fff; border-color:#333;
 }
+
 
  </style>
 </head>
 <body>
 <header>
   <picture>
-    
+    <!-- ① 幅 600 px 未満（スマホ想定）では headersp.jpg -->
     <source media="(max-width: 599px)" srcset="headersp.jpg">
-    
+    <!-- ② それ以外（タブレット・PC など）は従来どおり header.jpg -->
     <img src="header.jpg" alt="Header image" class="header-image">
   </picture>
 </header>
@@ -532,7 +291,7 @@ body{ padding-bottom:40px; }
     <button id="tabMerch">Merchandise / Publications</button>
   </nav>
 
-  
+  <!-- ▼ filter / search UI -->
   <div class="controls">
     <label id="langLabel">
       Language:
@@ -558,22 +317,6 @@ body{ padding-bottom:40px; }
       検索:
       <input type="text" id="searchInput" placeholder="キーワード" />
     </label>
-    <label id="viewModeLabel">
-      表示:
-      <select id="viewMode">
-        <option value="classic" selected>通常</option>
-        <option value="tile">タイル</option>
-        <option value="sphere">オービット</option>
-        <option value="slideshow">スライドショー</option>
-      </select>
-    </label>
-    <label id="slideModeLabel">
-      再生:
-      <select id="slideshowPlayMode">
-        <option value="normal">通常</option>
-        <option value="random">ランダム</option>
-      </select>
-    </label>
     <label id="limitLabel">
       表示件数:
       <select id="limit">
@@ -581,21 +324,15 @@ body{ padding-bottom:40px; }
         <option value="20">20</option>
         <option value="50">50</option>
         <option value="100">100</option>
-        <option value="200">200</option>
         <option value="9999" selected>All</option>
       </select>
     </label>
   </div>
-  <div class="pager" id="pager">
-    <button id="prevPage" type="button">前へ</button>
-    <span id="pageInfo"></span>
-    <button id="nextPage" type="button">次へ</button>
-  </div>
-  
+  <!-- ▲ filter / search UI -->
 
   <div class="gallery" id="gallery">読み込み中...</div>
 
-  
+  <!-- simple image modal -->
   <div id="modal">
     <span id="modal-close">&times;</span>
     <img id="modal-image" src="" alt="detail" />
@@ -603,31 +340,486 @@ body{ padding-bottom:40px; }
     <span id="modal-next" class="nav">&#10095;</span>
   </div>
 
-  <script src="script.js?v=20260410"></script>
+  <script>
+    // ===================== translation table =====================
+    const tr = {
+      ja: {
+        pageTitle: 'MAYAMAXX Online Gallery',
+        language: 'Language',
+        category: 'カテゴリ',
+        type: 'タイプ',
+        year: '年代',
+        search: '検索',
+        keywordPh: 'キーワード',
+        limit: '表示件数',
+        all: 'すべて',
+        creator: '作者',
+        date: '年代',
+        technique: '技法',
+        description: '説明',
+        source:      '出典',    
+        location:    '所蔵'    
+      },
+      en: {
+        pageTitle: 'MAYAMAXX Online Gallery',
+        language: 'Language',
+        category: 'Category',
+        type: 'Type',
+        year: 'Year',
+        search: 'Search',
+        keywordPh: 'Keyword',
+        limit: 'Items',
+        all: 'All',
+        creator: 'Artist',
+        date: 'Year',
+        technique: 'Technique',
+        description: 'Description',
+        source:      'Source',     // ← add this
+        location:    'Location'    // ← and this
+      }
+    };
+
+  // merch のとき、言語に関係なく Category / Type を英語固定で表示
+  function labelText(key){
+    if (currentDataset === 'merch') {
+      if (key === 'category') return 'Category';
+      if (key === 'type' || key === 'technique') return 'Type';
+    }
+    // works のときは通常の翻訳
+    return tr[currentLang][key];
+  }
+
+    let artworks = [];
+    let currentLang = 'ja';
+
+        // ---------- dataset switcher ----------
+    let currentDataset = 'works';
+    const DATASETS = {
+      works: 'metadata-mayamaxx.json',       // 作品
+      merch: 'metadata-merchandise.json'      // グッズ・出版物
+    };
+
+    async function loadDataset(which){
+      currentDataset = which;
+
+      // merch のときだけ Type フィルタを表示
+      toggleTypeFilter(which);
+      document.getElementById('subjectFilter').value = '';
+      document.getElementById('typeFilter').value    = '';
+      document.getElementById('yearFilter').value    = '';
+      document.getElementById('searchInput').value   = '';
+
+      const file = DATASETS[which];
+
+      const gallery = document.getElementById('gallery');
+      gallery.textContent = (currentLang==='ja' ? '読み込み中...' : 'Loading...');
+
+      try{
+        const json = await fetch(file).then(r=>r.json());
+        artworks = json.rows || json;
+
+        // 切替時はフィルタと検索を初期化
+        document.getElementById('subjectFilter').value = '';
+        document.getElementById('typeFilter').value    = '';
+        document.getElementById('yearFilter').value    = '';
+        document.getElementById('searchInput').value   = '';
+
+        populateFilters();
+        renderGallery();
+      }catch(e){
+        gallery.textContent = (currentLang==='ja' ? 'JSON 読み込み失敗: ' : 'Failed to load JSON: ') + e;
+      }
+    }
+
+    function setActiveTab(which){
+      document.getElementById('tabWorks').classList.toggle('active', which==='works');
+      document.getElementById('tabMerch').classList.toggle('active', which==='merch');
+    }
+
+    // ---------------- helper: robust localized field ----------------
+    function localize(raw) {
+      const isNullLike = v =>
+      v === null || v === undefined ||
+      (typeof v === 'string' && v.trim().toLowerCase() === 'null');
+      if (isNullLike(raw)) return '';
+      try {
+        // raw may be JSON string, object, or plain string
+        if (typeof raw === 'string' && raw.trim().startsWith('{')) {
+          raw = JSON.parse(raw);
+        }
+        if (typeof raw === 'object') {
+       const chosen = raw[currentLang] ?? raw[Object.keys(raw)[0]];
+       return isNullLike(chosen) ? '' : String(chosen);        }
+        return String(raw);
+      } catch (_) {
+        return isNullLike(raw) ? '' : String(raw);
+      }
+    }
+
+    // ---------------- translate static UI ----------------
+    function translateUI() {
+      const t = tr[currentLang];
+      document.title = t.pageTitle;
+      document.getElementById('pageTitle').textContent = t.pageTitle;
+      // labels
+      document.getElementById('langLabel').childNodes[0].nodeValue = t.language + ': ';
+      document.getElementById('subjectLabel').childNodes[0].nodeValue = labelText('category') + ': ';
+      document.getElementById('typeLabel').childNodes[0].nodeValue    = labelText('type') + ': ';
+      document.getElementById('yearLabel').childNodes[0].nodeValue = t.year + ': ';
+      document.getElementById('searchLabel').childNodes[0].nodeValue = t.search + ': ';
+      document.getElementById('limitLabel').childNodes[0].nodeValue = t.limit + ': ';
+      document.getElementById('searchInput').placeholder = t.keywordPh;
+      // default option text ("all")
+      ['subjectFilter','typeFilter','yearFilter'].forEach(id=>{
+        const sel = document.getElementById(id);
+        if (sel && sel.options.length) sel.options[0].textContent = t.all;
+      });
+  // ---------- フッターの日英切替 ----------
+  document.querySelectorAll('#siteFooter [data-lang]').forEach(el=>{
+    el.style.display = (el.getAttribute('data-lang') === currentLang) ? 'block' : 'none';
+  });
+    }
+
+    // ---------------- dynamic filters ----------------
+    function populateFilters() {
+      const subjSet = new Set();
+      const typeSet = new Set();
+      const yearSet = new Set();
+      artworks.forEach(item => {
+      const subj = localize(item['dc:subject']);
+      const typ  = localize(item['dc:type']);
+      const year = localize(item['dc:date']);
+      if (subj) {
+        subj.split(',').forEach(s => {
+         const t = s.trim();
+         if (t) subjSet.add(t);   // 「Landscape, Animals」→「Landscape」「Animals」
+        });
+      }
+
+      if (typ)  typeSet.add(typ);
+      if (year) yearSet.add(year);
+      });
+      const fill = (id,set) => {
+        const sel = document.getElementById(id);
+        // remove old except first ("all")
+        while (sel.options.length > 1) sel.remove(1);
+        Array.from(set).sort().forEach(v=>{
+          const o=document.createElement('option');
+          o.value=v; o.textContent=v; sel.appendChild(o);
+        });
+      };
+      fill('subjectFilter',subjSet);
+      fill('typeFilter',typeSet);
+      fill('yearFilter',yearSet);
+    }
+
+    function toggleTypeFilter(which){
+      const lbl = document.getElementById('typeLabel');
+      const sel = document.getElementById('typeFilter');
+      if (!lbl || !sel) return;
+
+      if (which === 'merch') {
+        // merch はスマホでも必ず表示（CSSの display:none を上書き）
+        lbl.style.display = 'flex';
+        sel.style.display = '';
+      } else {
+        // works は CSS に委ねる（スマホは @media で非表示、PCでは表示）
+        lbl.style.display = '';
+        sel.style.display = '';
+      }
+    }
+
+    // 画像リスト取得
+    function getImageList(item) {
+      if (item.image_list) {
+        try {
+          const a = JSON.parse(item.image_list);
+          if (Array.isArray(a) && a.length) return a;
+        } catch {}
+      }
+      const names = [item.detail_filename || ''];
+      for (let i = 0; i < 10; i++) {
+        const k = `image_${String(i).padStart(2,'0')}_filename`;
+        if (item[k]) names.push(item[k]);
+      }
+      return [...new Set(names.filter(n => n))];
+    }
+
+    // カルーセルバインド
+    function bindCarousel(imgEl, item) {
+      const modal = document.getElementById('modal');
+      const modalImg = document.getElementById('modal-image');
+      const prevBtn = document.getElementById('modal-prev');
+      const nextBtn = document.getElementById('modal-next');
+      const closeBtn = document.getElementById('modal-close');
+      let list = [], idx = 0;
+
+      function show(i) {
+        idx = (i + list.length) % list.length;
+        modalImg.src = list[idx];
+      }
+
+      imgEl.addEventListener('click', () => {
+        list = getImageList(item);
+        idx = 0;
+        show(0);
+        // 画像が複数ある場合のみ矢印を表示
+        if (list.length > 1) {
+          prevBtn.style.display = 'flex';
+          nextBtn.style.display = 'flex';
+          modal.dataset.multi = '1';
+        } else {
+          prevBtn.style.display = 'none';
+          nextBtn.style.display = 'none';
+          modal.dataset.multi = '0';
+        }
+        modal.style.display = 'flex';
+        prevBtn.onclick = () => show(idx - 1);
+        nextBtn.onclick = () => show(idx + 1);
+      });
+
+      closeBtn.onclick = () => { modal.style.display = 'none'; };
+      modal.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
+
+      // モーダル画像のスワイプ操作（スマホ/タブレット）
+      if (!window.__modalSwipeBound) {
+        window.__modalSwipeBound = true;
+        let startX = 0, startY = 0, tracking = false;
+        const SWIPE_THRESHOLD = 40;   // 左右移動の最小ピクセル量
+        const VERTICAL_TOL = 80;      // 縦ズレの許容量
+
+        const onTouchStart = (ev) => {
+          if (!ev.touches || ev.touches.length !== 1) return;
+          const t = ev.touches[0];
+          startX = t.clientX;
+          startY = t.clientY;
+          tracking = true;
+        };
+
+        const onTouchMove = (ev) => {
+          if (!tracking) return;
+          if (!ev.touches || ev.touches.length !== 1) return;
+          const t = ev.touches[0];
+          const dx = t.clientX - startX;
+          const dy = t.clientY - startY;
+          // 横方向が明らかに強いときはスクロールを抑止
+          if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
+            ev.preventDefault();
+          }
+        };
+
+        const onTouchEnd = (ev) => {
+          if (!tracking) return;
+          tracking = false;
+          // マルチ画像のときのみスワイプを有効化
+          const isMulti = document.getElementById('modal')?.dataset?.multi === '1';
+          if (!isMulti) return;
+
+          let endX, endY;
+          if (ev.changedTouches && ev.changedTouches.length) {
+            endX = ev.changedTouches[0].clientX;
+            endY = ev.changedTouches[0].clientY;
+          } else {
+            return;
+          }
+          const dx = endX - startX;
+          const dy = endY - startY;
+          if (Math.abs(dy) > VERTICAL_TOL) return; // 縦スワイプは無視
+          if (Math.abs(dx) < SWIPE_THRESHOLD) return; // 小さすぎる動きは無視
+
+          // 左へスワイプ -> 次、右へスワイプ -> 前
+          const prev = document.getElementById('modal-prev');
+          const next = document.getElementById('modal-next');
+          if (dx < 0) {
+            if (next && typeof next.onclick === 'function') next.onclick();
+          } else {
+            if (prev && typeof prev.onclick === 'function') prev.onclick();
+          }
+        };
+
+        // move は passive: false で preventDefault を許可
+        const modalImgEl = document.getElementById('modal-image');
+        modalImgEl.addEventListener('touchstart', onTouchStart, { passive: true });
+        modalImgEl.addEventListener('touchmove',  onTouchMove,  { passive: false });
+        modalImgEl.addEventListener('touchend',   onTouchEnd,   { passive: true });
+      }
+    }
+
+    // タブクリック
+    document.getElementById('tabWorks').addEventListener('click', () => {
+      setActiveTab('works');
+      loadDataset('works');
+      location.hash = '#works';
+    });
+    document.getElementById('tabMerch').addEventListener('click', () => {
+      setActiveTab('merch');
+      loadDataset('merch');
+      location.hash = '#merch';
+    });
+
+    // 初期表示（ハッシュで直リンク可能）
+    window.addEventListener('DOMContentLoaded', () => {
+      translateUI();
+      const which = (location.hash === '#merch') ? 'merch' : 'works';
+      setActiveTab(which);
+      loadDataset(which);
+    });
+
+    // ---------------- render gallery ----------------
+    function renderGallery() {
+        // ----- 0. 画面をクリア -----
+  const gallery = document.getElementById('gallery');
+  gallery.innerHTML = '';
+
+  // ----- 1. フィルタ条件・UI 値を取得 -----
+  const fltSubject = document.getElementById('subjectFilter').value;
+  const fltType = document.getElementById('typeFilter').value;
+  const fltYear    = document.getElementById('yearFilter').value;
+  const keyword    = document.getElementById('searchInput').value.trim().toLowerCase();
+  const limit      = Number(document.getElementById('limit').value);
+  const tLabels    = tr[currentLang];
+
+  // ----- 2. 作品を絞り込み -----
+  const filtered = artworks.filter(item => {
+    const title   = localize(item['dc:title']);
+    const subj    = localize(item['dc:subject']);
+    const typ     = localize(item['dc:type']);
+    const year    = localize(item['dc:date']);
+    const creator = localize(item['dc:creator']);
+    const desc    = localize(item['dc:description']);
+
+     if (fltSubject) {
+       const subjList = subj.split(',').map(s => s.trim());
+       if (!subjList.includes(fltSubject)) return false;
+     }
+    if (fltType    && typ  !== fltType)    return false;
+    if (fltYear    && year !== fltYear)    return false;
+    if (keyword && !(title + creator + desc).toLowerCase().includes(keyword)) return false;
+    return true;
+  });
+
+  if (!filtered.length) {
+    gallery.textContent = currentLang === 'ja'
+      ? '該当する作品がありません。'
+      : 'No artworks found.';
+    return;
+  }
+
+  // ----- 3. 年代降順に並べ替え -----
+  const sorted = filtered.sort((a, b) => {
+    const yB = parseInt(localize(b['dc:date'])) || 0;
+    const yA = parseInt(localize(a['dc:date'])) || 0;
+    return yB - yA;
+  });
+
+  // ① まず SVG の文字列を定義
+const multiIconSvg = `
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <!-- 手前の枠 -->
+    <rect x="6" y="4" width="14" height="12" rx="2" ry="2"/>
+    <!-- 奥の枠（少しずらして下に） -->
+    <rect x="2" y="8" width="14" height="12" rx="2" ry="2"/>
+  </svg>
+`;
+
+  // ----- 4. 描画 -----
+  sorted.slice(0, limit).forEach(item => {
+        const title = localize(item['dc:title']);
+        const subj  = localize(item['dc:subject']);
+        const typ   = localize(item['dc:type']);
+        const year = localize(item['dc:date']);
+        const creator = localize(item['dc:creator']);
+        const desc = localize(item['dc:description']);
+        const thumb = item['thumbnail_url'] || item['thumbnail_filename'];
+        const imageList = getImageList(item);
+        const hasMultiple = imageList.length > 1;
+        // ② サムネイルHTMLを生成（hasMultipleならアイコンを追加）
+        const thumbHtml = thumb
+          ? `
+          <div class="thumb-wrapper">
+            <img src="${thumb}" alt="${title}" loading="lazy" />
+            ${hasMultiple
+              ? `<span class="multi-icon">${multiIconSvg}</span>`
+              : ``}
+          </div>`
+          : '';
+
+        const lblCategory = labelText('category');
+        const lblType     = labelText('technique'); // merch のときも "Type"
+
+        const detail= item['detail_url']    || item['detail_filename'] || thumb;
+        const card = document.createElement('div');
+        card.className = 'artwork';
+        card.innerHTML = `
+          ${thumbHtml}
+          <div class="artwork-content">
+            <h2>${title}</h2>
+            ${creator ? `<p class="creator-line"><strong>${tLabels.creator}:</strong> ${creator}</p>` : ''}
+            ${year    ? `<p><strong>${tLabels.date}:</strong> ${year}</p>` : ''}
+            ${subj ? `<p><strong>${lblCategory}:</strong> ${subj}</p>` : ''}
+            ${typ  ? `<p><strong>${lblType}:</strong> ${typ}</p>`     : ''}
+            ${desc    ? `<p>${desc}</p>` : ''}
+            ${localize(item['dc:source']) ? `<p>${localize(item['dc:source'])}</p>` : ''}
+            ${localize(item['vra:location']) ? `<p>${localize(item['vra:location'])}</p>` 
+              : ''}
+          </div>`;
+
+        const imgEl = card.querySelector('img');
+        bindCarousel(imgEl, item);
+        gallery.appendChild(card);
+      });
+    }
+
+    // ---------------- modal close ----------------
+    document.getElementById('modal-close').addEventListener('click',()=>{
+      document.getElementById('modal').style.display='none';
+    });
+    document.getElementById('modal').addEventListener('click',e=>{
+      if(e.target===e.currentTarget) e.currentTarget.style.display='none';
+    });
+
+    // ---------------- event bindings ----------------
+    document.getElementById('lang').addEventListener('change',e=>{
+      currentLang = e.target.value;
+      translateUI();
+      populateFilters();
+      renderGallery();
+    });
+    ['subjectFilter','typeFilter','yearFilter','limit'].forEach(id=>{
+      document.getElementById(id).addEventListener('change',renderGallery);
+    });
+    document.getElementById('searchInput').addEventListener('input',renderGallery);
+
+  </script>
+  <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/OnlineGallery/sw.js", { scope: "/OnlineGallery/" });
+    });
+  }
+</script>
  </main>
 <footer id="siteFooter" class="site-footer">
-  
+  <!-- 日本語用 -->
   <div data-lang="ja">
-    <p>MAYA MAXXをみんなで守ろう！ みんなでつくるアーカイブプロジェクト</p>
+    <p>MAYA MAXX をみんなで守ろう！ みんなでつくるアーカイブプロジェクト</p>
     <p>作品情報をお寄せください
        <a href="mailto:michikururu@gmail.com">michikururu@gmail.com</a>
     </p>
     <p>MAYA MAXX Archive Project | Michiko Kurushima / Keiichi Murakami / Hiroyuki Abe</p>
-    <p>Copyrightﾂｩ MAYA MAXX , 2026 All Rights Reserved.</p>
+    <p>Copyright© MAYA MAXX , 2026 All Rights Reserved.</p>
   </div>
 
-  
+  <!-- 英語用 -->
   <div data-lang="en">
-    <p>Let's all help preserve MAYA MAXX!<br>
+    <p>Let’s all help preserve MAYA MAXX!<br>
        A collaborative archive project by everyone.</p>
     <p>Please send us any information about the artworks:
        <a href="mailto:michikururu@gmail.com">michikururu@gmail.com</a>
     </p>
     <p>MAYA MAXX Archive Project | Michiko Kurushima / Keiichi Murakami / Hiroyuki Abe</p>
-    <p>Copyrightﾂｩ MAYA MAXX , 2026 All Rights Reserved.</p>
+    <p>Copyright© MAYA MAXX , 2026 All Rights Reserved.</p>
   </div>
 </footer>
 </body>
 </html>
-
-
