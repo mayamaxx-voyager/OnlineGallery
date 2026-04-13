@@ -974,7 +974,22 @@ body{ padding-bottom:40px; }
       const fill = (id,set) => {
         const sel = document.getElementById(id);
         while (sel.options.length > 1) sel.remove(1);
-        Array.from(set).sort().forEach(v=>{
+        const values = Array.from(set);
+        if (id === 'yearFilter') {
+          values.sort((a, b) => {
+            const ay = Number((String(a).match(/\d{3,4}/) || [])[0]);
+            const by = Number((String(b).match(/\d{3,4}/) || [])[0]);
+            const aHas = Number.isFinite(ay);
+            const bHas = Number.isFinite(by);
+            if (aHas && bHas && ay !== by) return by - ay;
+            if (aHas && !bHas) return -1;
+            if (!aHas && bHas) return 1;
+            return String(b).localeCompare(String(a), 'ja');
+          });
+        } else {
+          values.sort();
+        }
+        values.forEach(v=>{
           const o=document.createElement('option');
           o.value=v; o.textContent=v; sel.appendChild(o);
         });
@@ -1259,6 +1274,7 @@ body{ padding-bottom:40px; }
         const year = localize(item['dc:date']);
         const creator = localize(item['dc:creator']);
         const desc = localize(item['dc:description']);
+        const source = localize(item['dc:source']);
 
         if (fltSubject) {
           const subjList = subj.split(',').map(s => s.trim());
@@ -1266,7 +1282,7 @@ body{ padding-bottom:40px; }
         }
         if (fltType && typ !== fltType) return false;
         if (fltYear && year !== fltYear) return false;
-        if (keyword && !(title + creator + desc).toLowerCase().includes(keyword)) return false;
+        if (keyword && !(title + creator + desc + subj + source).toLowerCase().includes(keyword)) return false;
         return true;
       });
 
