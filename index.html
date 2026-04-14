@@ -215,6 +215,13 @@
       perspective: none;
       transform-style: flat;
     }
+    .gallery.gallery-sphere {
+      touch-action: none;
+      cursor: grab;
+    }
+    .gallery.gallery-sphere.is-dragging {
+      cursor: grabbing;
+    }
     .slideshow-stage {
       width: min(92vw, 1040px);
       height: min(64vh, 720px);
@@ -811,6 +818,29 @@ body{ padding-bottom:40px; }
     let lastAnimationTime = 0;
     let resizeTimer = null;
     let modalCloseTimer = null;
+    let sphereSuppressClickUntil = 0;
+    const sphereView = {
+      autoYaw: 0,
+      autoRoll: 0,
+      yawOffset: 0,
+      pitchOffset: 0,
+      rollOffset: 0,
+      panX: 0,
+      panY: 0,
+      zoom: 2.0
+    };
+    const sphereInteraction = {
+      pointers: new Map(),
+      pinchStartDist: 0,
+      pinchStartZoom: 2.0,
+      pinchStartPanX: 0,
+      pinchStartPanY: 0,
+      pinchStartCenter: { x: 0, y: 0 },
+      lastSingle: { x: 0, y: 0 },
+      dragDistance: 0,
+      dragMoved: false
+    };
+    let sphereInteractionCleanup = null;
     let currentDataset = 'works';
     const DATASETS = {
       works: 'metadata-mayamaxx.json',       // 菴懷刀
@@ -1045,6 +1075,135 @@ body{ padding-bottom:40px; }
       return Math.round(minPx + (maxPx - minPx) * ratio);
     }
 
+    function clamp(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+
+    function teardownSphereInteraction() {
+      if (typeof sphereInteractionCleanup === 'function') {
+        sphereInteractionCleanup();
+      }
+      sphereInteractionCleanup = null;
+    }
+
+    function setupSphereInteraction(gallery) {
+      teardownSphereInteraction();
+      if (!gallery) return;
+
+      sphereInteraction.pointers.clear();
+      sphereInteraction.dragMoved = false;
+
+      const getDistance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+      const getCenter = (a, b) => ({ x: (a.x + b.x) * 0.5, y: (a.y + b.y) * 0.5 });
+      const markMoved = () => { sphereSuppressClickUntil = Date.now() + 260; };
+      const startPinch = () => {
+        const pts = Array.from(sphereInteraction.pointers.values());
+        if (pts.length < 2) return;
+        sphereInteraction.pinchStartDist = Math.max(8, getDistance(pts[0], pts[1]));
+        sphereInteraction.pinchStartZoom = sphereView.zoom;
+        sphereInteraction.pinchStartPanX = sphereView.panX;
+        sphereInteraction.pinchStartPanY = sphereView.panY;
+        sphereInteraction.pinchStartCenter = getCenter(pts[0], pts[1]);
+      };
+
+      const onPointerDown = (ev) => {
+        if (currentViewMode !== 'sphere') return;
+        sphereInteraction.pointers.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
+        if (sphereInteraction.pointers.size === 1) {
+          sphereInteraction.lastSingle = { x: ev.clientX, y: ev.clientY };
+          sphereInteraction.dragDistance = 0;
+          sphereInteraction.dragMoved = false;
+          gallery.classList.add('is-dragging');
+        } else if (sphereInteraction.pointers.size >= 2) {
+          gallery.classList.add('is-dragging');
+          startPinch();
+        }
+      };
+
+      const onPointerMove = (ev) => {
+        if (currentViewMode !== 'sphere') return;
+        if (!sphereInteraction.pointers.has(ev.pointerId)) return;
+        sphereInteraction.pointers.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
+
+        if (sphereInteraction.pointers.size >= 2) {
+          const pts = Array.from(sphereInteraction.pointers.values());
+          const dist = Math.max(8, getDistance(pts[0], pts[1]));
+          const center = getCenter(pts[0], pts[1]);
+          const zoomScale = dist / Math.max(8, sphereInteraction.pinchStartDist);
+          sphereView.zoom = clamp(sphereInteraction.pinchStartZoom * zoomScale, 0.7, 4.8);
+          sphereView.panX = sphereInteraction.pinchStartPanX + (center.x - sphereInteraction.pinchStartCenter.x);
+          sphereView.panY = sphereInteraction.pinchStartPanY + (center.y - sphereInteraction.pinchStartCenter.y);
+          sphereInteraction.dragMoved = true;
+          markMoved();
+          ev.preventDefault();
+          return;
+        }
+
+        const prev = sphereInteraction.lastSingle;
+        const dx = ev.clientX - prev.x;
+        const dy = ev.clientY - prev.y;
+        sphereInteraction.lastSingle = { x: ev.clientX, y: ev.clientY };
+        sphereInteraction.dragDistance += Math.hypot(dx, dy);
+        if (sphereInteraction.dragDistance < 4) return;
+
+        const panMode = ev.pointerType === 'mouse' && (ev.shiftKey || (ev.buttons & 2) === 2);
+        if (panMode) {
+          sphereView.panX += dx;
+          sphereView.panY += dy;
+        } else {
+          sphereView.yawOffset += dx * 0.0055;
+          sphereView.pitchOffset += dy * 0.0046;
+        }
+        sphereInteraction.dragMoved = true;
+        markMoved();
+        ev.preventDefault();
+      };
+
+      const onPointerUpOrCancel = (ev) => {
+        sphereInteraction.pointers.delete(ev.pointerId);
+        if (sphereInteraction.pointers.size >= 2) {
+          startPinch();
+          return;
+        }
+        if (sphereInteraction.pointers.size === 1) {
+          const p = Array.from(sphereInteraction.pointers.values())[0];
+          sphereInteraction.lastSingle = { x: p.x, y: p.y };
+          sphereInteraction.dragMoved = false;
+          return;
+        }
+        gallery.classList.remove('is-dragging');
+      };
+
+      const onWheel = (ev) => {
+        if (currentViewMode !== 'sphere') return;
+        ev.preventDefault();
+        const scale = Math.exp(-ev.deltaY * 0.0013);
+        sphereView.zoom = clamp(sphereView.zoom * scale, 0.7, 4.8);
+        markMoved();
+      };
+
+      const onContextMenu = (ev) => {
+        if (currentViewMode === 'sphere') ev.preventDefault();
+      };
+
+      gallery.addEventListener('pointerdown', onPointerDown);
+      gallery.addEventListener('pointermove', onPointerMove);
+      gallery.addEventListener('pointerup', onPointerUpOrCancel);
+      gallery.addEventListener('pointercancel', onPointerUpOrCancel);
+      gallery.addEventListener('wheel', onWheel, { passive: false });
+      gallery.addEventListener('contextmenu', onContextMenu);
+
+      sphereInteractionCleanup = () => {
+        gallery.classList.remove('is-dragging');
+        gallery.removeEventListener('pointerdown', onPointerDown);
+        gallery.removeEventListener('pointermove', onPointerMove);
+        gallery.removeEventListener('pointerup', onPointerUpOrCancel);
+        gallery.removeEventListener('pointercancel', onPointerUpOrCancel);
+        gallery.removeEventListener('wheel', onWheel);
+        gallery.removeEventListener('contextmenu', onContextMenu);
+      };
+    }
+
     function startSphereMotion() {
       const gallery = document.getElementById('gallery');
       if (!gallery || !sphereThumbs.length) return;
@@ -1053,11 +1212,8 @@ body{ padding-bottom:40px; }
       lastAnimationTime = performance.now();
 
       const fov = 560;
-      let yaw = 0;
       const earthTilt = 23.4 * Math.PI / 180;
       const earthTiltDeg = 23.4;
-      let pitch = -earthTilt;
-      let roll = 0;
 
       const animate = (now) => {
         const dt = Math.min(0.05, (now - lastAnimationTime) / 1000);
@@ -1069,14 +1225,17 @@ body{ padding-bottom:40px; }
           gallery.clientHeight * 0.5 - margin
         );
         const baseRadius = Math.max(110, Math.min(Math.min(gallery.clientWidth, gallery.clientHeight) * 0.495, fitRadius));
-        const zoomFactor = 2.0;
+        const zoomFactor = sphereView.zoom;
+        const zoomThumbScale = clamp(Math.pow(zoomFactor / 2.0, 0.75), 0.62, 1.8);
         const sphereRadius = baseRadius * zoomFactor;
-        const centerX = gallery.clientWidth * 0.5;
-        const centerY = gallery.clientHeight * 0.5;
+        const centerX = gallery.clientWidth * 0.5 + sphereView.panX;
+        const centerY = gallery.clientHeight * 0.5 + sphereView.panY;
 
-        yaw += dt * 0.44;
-        roll += dt * 0.08;
-        pitch = -earthTilt;
+        sphereView.autoYaw += dt * 0.44;
+        sphereView.autoRoll += dt * 0.08;
+        const yaw = sphereView.autoYaw + sphereView.yawOffset;
+        const pitch = -earthTilt + sphereView.pitchOffset;
+        const roll = sphereView.autoRoll + sphereView.rollOffset;
 
         const cosY = Math.cos(yaw);
         const sinY = Math.sin(yaw);
@@ -1111,7 +1270,7 @@ body{ padding-bottom:40px; }
 
           node.el.style.left = `${px}px`;
           node.el.style.top = `${py}px`;
-          node.el.style.transform = `translate(-50%, -50%) rotateX(${bendX}deg) rotateY(${bendY}deg) rotateZ(${twistZ}deg) scale(${depthScale * edgeCurve})`;
+          node.el.style.transform = `translate(-50%, -50%) rotateX(${bendX}deg) rotateY(${bendY}deg) rotateZ(${twistZ}deg) scale(${depthScale * edgeCurve * zoomThumbScale})`;
           node.el.style.opacity = `${0.14 + depth * 0.9}`;
           node.el.style.zIndex = `${Math.floor((z2 + sphereRadius) * 10)}`;
         });
@@ -1152,6 +1311,7 @@ body{ padding-bottom:40px; }
       }
 
       imgEl.addEventListener('click', () => {
+        if (currentViewMode === 'sphere' && Date.now() < sphereSuppressClickUntil) return;
         list = getImageList(item);
         idx = 0;
         show(0);
@@ -1251,10 +1411,12 @@ body{ padding-bottom:40px; }
       gallery.classList.toggle('gallery-classic', currentViewMode === 'classic');
       gallery.classList.toggle('gallery-slideshow', currentViewMode === 'slideshow');
       gallery.classList.toggle('gallery-tile', currentViewMode === 'tile');
+      gallery.classList.toggle('gallery-sphere', currentViewMode === 'sphere');
       if (slideshowTimer) {
         clearInterval(slideshowTimer);
         slideshowTimer = null;
       }
+      teardownSphereInteraction();
       sphereThumbs = [];
       if (sphereAnimId) {
         cancelAnimationFrame(sphereAnimId);
@@ -1543,6 +1705,7 @@ body{ padding-bottom:40px; }
         });
       });
 
+      setupSphereInteraction(gallery);
       startSphereMotion();
     }
     document.getElementById('modal-close').addEventListener('click',()=> closeModal());
