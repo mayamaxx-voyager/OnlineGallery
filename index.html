@@ -490,17 +490,13 @@
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
-      transition: opacity 0.45s ease, visibility 0.45s ease;
+      transition: opacity 0.45s ease, visibility 0s linear 0.45s;
     }
     #modal.is-open {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
-    }
-    #modal.is-closing {
-      opacity: 0;
-      visibility: visible;
-      pointer-events: none;
+      transition: opacity 0.45s ease, visibility 0s linear 0s;
     }
     #modal img {
       max-width: 90%;
@@ -817,7 +813,7 @@ body{ padding-bottom:40px; }
     let slideshowTimer = null;
     let lastAnimationTime = 0;
     let resizeTimer = null;
-    let modalCloseTimer = null;
+    let modalImageRequestId = 0;
     let sphereSuppressClickUntil = 0;
     const sphereView = {
       autoYaw: 0,
@@ -962,36 +958,9 @@ body{ padding-bottom:40px; }
       lbl.style.display = (currentViewMode === 'slideshow') ? 'flex' : 'none';
     }
 
-    function getMaxTransitionMs(el) {
-      if (!el) return 0;
-      const style = getComputedStyle(el);
-      const parseList = (value) => String(value).split(',').map(v => {
-        const t = v.trim();
-        if (t.endsWith('ms')) return Number.parseFloat(t) || 0;
-        if (t.endsWith('s')) return (Number.parseFloat(t) || 0) * 1000;
-        return 0;
-      });
-      const durs = parseList(style.transitionDuration);
-      const delays = parseList(style.transitionDelay);
-      let maxMs = 0;
-      for (let i = 0; i < Math.max(durs.length, delays.length); i++) {
-        const d = durs[i] ?? durs[durs.length - 1] ?? 0;
-        const l = delays[i] ?? delays[delays.length - 1] ?? 0;
-        maxMs = Math.max(maxMs, d + l);
-      }
-      return maxMs;
-    }
-
     function openModal() {
       const modal = document.getElementById('modal');
       if (!modal) return;
-      if (modalCloseTimer) {
-        clearTimeout(modalCloseTimer);
-        modalCloseTimer = null;
-      }
-      const hadClosing = modal.classList.contains('is-closing');
-      modal.classList.remove('is-closing');
-      if (hadClosing) void modal.offsetWidth;
       modal.classList.add('is-open');
     }
 
@@ -999,14 +968,8 @@ body{ padding-bottom:40px; }
       const modal = document.getElementById('modal');
       if (!modal) return;
       modal.classList.remove('is-open');
-      modal.classList.add('is-closing');
-      if (modalCloseTimer) clearTimeout(modalCloseTimer);
-      const fadeMs = Math.max(120, getMaxTransitionMs(modal));
-      modalCloseTimer = setTimeout(() => {
-        if (!modal.classList.contains('is-open')) {
-          modal.classList.remove('is-closing');
-        }
-      }, fadeMs + 50);
+      modal.classList.remove('is-closing');
+      modalImageRequestId += 1;
     }
     function populateFilters() {
       const subjSet = new Set();
@@ -1332,7 +1295,20 @@ body{ padding-bottom:40px; }
 
       function show(i) {
         idx = (i + list.length) % list.length;
-        modalImg.src = list[idx];
+        const targetSrc = list[idx] || '';
+        const requestId = ++modalImageRequestId;
+        modalImg.removeAttribute('src');
+        if (!targetSrc) return;
+        const preloader = new Image();
+        preloader.decoding = 'async';
+        const commit = () => {
+          if (requestId !== modalImageRequestId) return;
+          modalImg.src = targetSrc;
+        };
+        preloader.onload = commit;
+        preloader.onerror = commit;
+        preloader.src = targetSrc;
+        if (preloader.complete) commit();
       }
 
       imgEl.addEventListener('click', () => {
