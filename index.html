@@ -962,6 +962,26 @@ body{ padding-bottom:40px; }
       lbl.style.display = (currentViewMode === 'slideshow') ? 'flex' : 'none';
     }
 
+    function getMaxTransitionMs(el) {
+      if (!el) return 0;
+      const style = getComputedStyle(el);
+      const parseList = (value) => String(value).split(',').map(v => {
+        const t = v.trim();
+        if (t.endsWith('ms')) return Number.parseFloat(t) || 0;
+        if (t.endsWith('s')) return (Number.parseFloat(t) || 0) * 1000;
+        return 0;
+      });
+      const durs = parseList(style.transitionDuration);
+      const delays = parseList(style.transitionDelay);
+      let maxMs = 0;
+      for (let i = 0; i < Math.max(durs.length, delays.length); i++) {
+        const d = durs[i] ?? durs[durs.length - 1] ?? 0;
+        const l = delays[i] ?? delays[delays.length - 1] ?? 0;
+        maxMs = Math.max(maxMs, d + l);
+      }
+      return maxMs;
+    }
+
     function openModal() {
       const modal = document.getElementById('modal');
       if (!modal) return;
@@ -969,7 +989,9 @@ body{ padding-bottom:40px; }
         clearTimeout(modalCloseTimer);
         modalCloseTimer = null;
       }
+      const hadClosing = modal.classList.contains('is-closing');
       modal.classList.remove('is-closing');
+      if (hadClosing) void modal.offsetWidth;
       modal.classList.add('is-open');
     }
 
@@ -979,9 +1001,12 @@ body{ padding-bottom:40px; }
       modal.classList.remove('is-open');
       modal.classList.add('is-closing');
       if (modalCloseTimer) clearTimeout(modalCloseTimer);
+      const fadeMs = Math.max(120, getMaxTransitionMs(modal));
       modalCloseTimer = setTimeout(() => {
-        modal.classList.remove('is-closing');
-      }, 470);
+        if (!modal.classList.contains('is-open')) {
+          modal.classList.remove('is-closing');
+        }
+      }, fadeMs + 50);
     }
     function populateFilters() {
       const subjSet = new Set();
@@ -1329,8 +1354,6 @@ body{ padding-bottom:40px; }
         nextBtn.onclick = () => show(idx + 1);
       });
 
-      closeBtn.onclick = () => { closeModal(); };
-      modal.onclick = e => { if (e.target === modal) closeModal(); };
       if (!window.__modalSwipeBound) {
         window.__modalSwipeBound = true;
         let startX = 0, startY = 0, tracking = false;
