@@ -842,6 +842,26 @@ body{ padding-bottom:40px; }
       works: 'metadata-mayamaxx.json',       // 菴懷刀
       merch: 'metadata-merchandise.json'      // 繧ｰ繝・ぜ繝ｻ蜃ｺ迚育黄
     };
+    const IMAGE_BASE_URL_CONFIG = 'image-base-urls.json';
+    const IMAGE_BASE_KEYS = {
+      works: 'works',
+      merch: 'goods'
+    };
+    let imageBaseUrls = {};
+
+    async function loadImageBaseUrls(){
+      if (Object.keys(imageBaseUrls).length) return imageBaseUrls;
+      imageBaseUrls = await fetch(IMAGE_BASE_URL_CONFIG).then(r=>r.json());
+      return imageBaseUrls;
+    }
+
+    function resolveImageUrl(filenameOrUrl){
+      if (!filenameOrUrl) return '';
+      if (/^https?:\/\//i.test(filenameOrUrl)) return filenameOrUrl;
+      const key = IMAGE_BASE_KEYS[currentDataset];
+      const baseUrl = imageBaseUrls[key] || '';
+      return baseUrl + filenameOrUrl;
+    }
 
     async function loadDataset(which){
       currentDataset = which;
@@ -858,6 +878,7 @@ body{ padding-bottom:40px; }
       gallery.textContent = (currentLang==='ja' ? '読み込み中...' : 'Loading...');
 
       try{
+        await loadImageBaseUrls();
         const json = await fetch(file).then(r=>r.json());
         artworks = json.rows || json;
         document.getElementById('subjectFilter').value = '';
@@ -1272,7 +1293,7 @@ body{ padding-bottom:40px; }
       if (item.image_list) {
         try {
           const a = JSON.parse(item.image_list);
-          if (Array.isArray(a) && a.length) return a;
+          if (Array.isArray(a) && a.length) return a.map(resolveImageUrl);
         } catch {}
       }
       const names = [item.detail_filename || ''];
@@ -1280,10 +1301,10 @@ body{ padding-bottom:40px; }
         const k = `image_${String(i).padStart(2,'0')}_filename`;
         if (item[k]) names.push(item[k]);
       }
-      return [...new Set(names.filter(n => n))];
+      return [...new Set(names.filter(n => n).map(resolveImageUrl))];
     }
     function getSlideshowPrimaryImage(item) {
-      return item['detail_url'] || item['detail_filename'] || item['thumbnail_url'] || item['thumbnail_filename'] || '';
+      return resolveImageUrl(item['detail_url'] || item['detail_filename'] || item['thumbnail_url'] || item['thumbnail_filename'] || '');
     }
     function bindCarousel(imgEl, item) {
       const modal = document.getElementById('modal');
@@ -1613,7 +1634,7 @@ body{ padding-bottom:40px; }
       if (currentViewMode === 'tile') {
         shown.forEach(item => {
           const title = localize(item['dc:title']) || '';
-          const thumb = item['thumbnail_url'] || item['thumbnail_filename'];
+          const thumb = resolveImageUrl(item['thumbnail_url'] || item['thumbnail_filename']);
           if (!thumb) return;
           const imageList = getImageList(item);
           const hasMultiple = imageList.length > 1;
@@ -1639,7 +1660,7 @@ body{ padding-bottom:40px; }
           const desc = localize(item['dc:description']);
           const source = localize(item['dc:source']);
           const location = localize(item['vra:location']);
-          const thumb = item['thumbnail_url'] || item['thumbnail_filename'];
+          const thumb = resolveImageUrl(item['thumbnail_url'] || item['thumbnail_filename']);
           if (!thumb) return;
           const imageList = getImageList(item);
           const hasMultiple = imageList.length > 1;
@@ -1668,12 +1689,12 @@ body{ padding-bottom:40px; }
         return;
       }
 
-      const validItems = shown.filter(item => (item['thumbnail_url'] || item['thumbnail_filename']));
+      const validItems = shown.filter(item => resolveImageUrl(item['thumbnail_url'] || item['thumbnail_filename']));
       const total = validItems.length;
 
       validItems.forEach((item, i) => {
         const title = localize(item['dc:title']) || '';
-        const thumb = item['thumbnail_url'] || item['thumbnail_filename'];
+        const thumb = resolveImageUrl(item['thumbnail_url'] || item['thumbnail_filename']);
         const imageList = getImageList(item);
         const hasMultiple = imageList.length > 1;
         const sizeMetric = getSizeMetricFromItem(item) ?? medianMetric;
@@ -1789,6 +1810,3 @@ body{ padding-bottom:40px; }
 </footer>
 </body>
 </html>
-
-
-
