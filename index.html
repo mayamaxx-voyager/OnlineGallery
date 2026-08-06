@@ -498,13 +498,18 @@
       pointer-events: auto;
       transition: opacity 0.45s ease, visibility 0s linear 0s;
     }
-    #modal img {
+    #modal img,
+    #modal video {
       max-width: 90%;
       max-height: 90%;
       border: 5px solid #fff;
       border-radius: 10px;
       object-fit: contain;
       display: block;
+    }
+    #modal img[hidden],
+    #modal video[hidden] {
+      display: none;
     }
     #modal-close {
       position: absolute;
@@ -731,6 +736,7 @@ body{ padding-bottom:40px; }
   <div id="modal">
     <span id="modal-close">&times;</span>
     <img id="modal-image" src="" alt="detail" />
+    <video id="modal-video" controls playsinline preload="metadata" hidden></video>
     <span id="modal-prev" class="nav">&#10094;</span>
     <span id="modal-next" class="nav">&#10095;</span>
   </div>
@@ -988,6 +994,8 @@ body{ padding-bottom:40px; }
     function closeModal() {
       const modal = document.getElementById('modal');
       if (!modal) return;
+      const modalVideo = document.getElementById('modal-video');
+      if (modalVideo) modalVideo.pause();
       modal.classList.remove('is-open');
       modal.classList.remove('is-closing');
       modalImageRequestId += 1;
@@ -1304,11 +1312,17 @@ body{ padding-bottom:40px; }
       return [...new Set(names.filter(n => n).map(resolveImageUrl))];
     }
     function getSlideshowPrimaryImage(item) {
-      return resolveImageUrl(item['detail_url'] || item['detail_filename'] || item['thumbnail_url'] || item['thumbnail_filename'] || '');
+      const detail = resolveImageUrl(item['detail_url'] || item['detail_filename'] || '');
+      if (detail && !isVideoUrl(detail)) return detail;
+      return resolveImageUrl(item['thumbnail_url'] || item['thumbnail_filename'] || '');
+    }
+    function isVideoUrl(src) {
+      return /\.(?:mp4|webm|ogv|ogg|mov|m4v)(?:[?#].*)?$/i.test(src || '');
     }
     function bindCarousel(imgEl, item) {
       const modal = document.getElementById('modal');
       const modalImg = document.getElementById('modal-image');
+      const modalVideo = document.getElementById('modal-video');
       const prevBtn = document.getElementById('modal-prev');
       const nextBtn = document.getElementById('modal-next');
       const closeBtn = document.getElementById('modal-close');
@@ -1318,8 +1332,21 @@ body{ padding-bottom:40px; }
         idx = (i + list.length) % list.length;
         const targetSrc = list[idx] || '';
         const requestId = ++modalImageRequestId;
+        modalVideo.pause();
+        modalVideo.removeAttribute('src');
+        modalVideo.load();
+        modalVideo.hidden = true;
+        modalImg.hidden = false;
         modalImg.removeAttribute('src');
         if (!targetSrc) return;
+        if (isVideoUrl(targetSrc)) {
+          modalImg.hidden = true;
+          modalVideo.hidden = false;
+          modalVideo.src = targetSrc;
+          modalVideo.load();
+          modalVideo.play().catch(() => {});
+          return;
+        }
         const preloader = new Image();
         preloader.decoding = 'async';
         const commit = () => {
@@ -1401,10 +1428,11 @@ body{ padding-bottom:40px; }
             if (prev && typeof prev.onclick === 'function') prev.onclick();
           }
         };
-        const modalImgEl = document.getElementById('modal-image');
-        modalImgEl.addEventListener('touchstart', onTouchStart, { passive: true });
-        modalImgEl.addEventListener('touchmove',  onTouchMove,  { passive: false });
-        modalImgEl.addEventListener('touchend',   onTouchEnd,   { passive: true });
+        [document.getElementById('modal-image'), document.getElementById('modal-video')].forEach(modalMediaEl => {
+          modalMediaEl.addEventListener('touchstart', onTouchStart, { passive: true });
+          modalMediaEl.addEventListener('touchmove',  onTouchMove,  { passive: false });
+          modalMediaEl.addEventListener('touchend',   onTouchEnd,   { passive: true });
+        });
       }
     }
     document.getElementById('tabWorks').addEventListener('click', () => {
